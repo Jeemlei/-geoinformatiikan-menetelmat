@@ -8,7 +8,13 @@ Toisessa työpajassa tarkasteltiin valintatyökaluja ja projektioiden aiheuttami
 
 ### Etäisyyksien ja pinta-alojen vertailua
 
-Tarkastelin ensin etäisyyksien ja pinta-alojen vääristymiä Suomessa eri projektioiden välillä. 
+Tarkastelin ensin etäisyyksien ja pinta-alojen vääristymiä Suomessa eri projektioiden välillä.
+Alla kuvat mitatusta alueesta ja etäisyydestä sekä taulukko mittaustuloksista eri projektioilla ja mittaustekniikoilla.
+
+<p float="left">
+    <img src="{{ site.base_url }}{% link /assets/imgs/TM35FIN_area.PNG %}" width="100%">
+    <img src="{{ site.base_url }}{% link /assets/imgs/TM35FIN_dist.PNG %}" width="100%">
+</p>
 
  Projektio       | ID         | Ellipsoidinen alue | Karteesinen alue | Ellipsoidinen etäisyys | Karteesinen etäisyys 
 :---------------:|:----------:|:------------------:|:----------------:|:----------------------:|:--------------:
