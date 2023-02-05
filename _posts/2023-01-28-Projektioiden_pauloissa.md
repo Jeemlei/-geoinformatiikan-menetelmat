@@ -2,7 +2,6 @@
 title: "Projektioiden pauloissa"
 date: 2023-01-28
 layout: post
-excerpt_separator: <!--more-->
 ---
 
 Toisessa työpajassa tarkasteltiin valintatyökaluja ja projektioiden aiheuttamia vääristymiä pinta-aloissa ja etäisyyksissä sekä pureuduttiin aineistorajapinoihin, joihin olinkin jo ehtinyt hieman tutustua edellisen viikon tehtävien yhteydessä.
