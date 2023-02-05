@@ -12,8 +12,8 @@ Tarkastelin ensin etäisyyksien ja pinta-alojen vääristymiä Suomessa eri proj
 Alla kuvat mitatusta alueesta ja etäisyydestä sekä taulukko mittaustuloksista eri projektioilla ja mittaustekniikoilla.
 
 <p float="left">
-    <img src="{{ site.base_url }}{% link /assets/imgs/TM35FIN_area.PNG %}" width="50%">
-    <img src="{{ site.base_url }}{% link /assets/imgs/TM35FIN_dist.PNG %}" width="50%">
+    <img src="{{ site.base_url }}{% link /assets/imgs/TM35FIN_area.PNG %}" width="49%">
+    <img src="{{ site.base_url }}{% link /assets/imgs/TM35FIN_dist.PNG %}" width="49%">
 </p>
 
  Projektio       | ID         | Ellipsoidinen alue | Karteesinen alue | Ellipsoidinen etäisyys | Karteesinen etäisyys 
