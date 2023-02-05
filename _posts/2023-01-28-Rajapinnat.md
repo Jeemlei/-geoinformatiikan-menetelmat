@@ -31,7 +31,7 @@ Seuraavassa taulukossa vielä muiden projektioiden mittausten erot verrattuna TM
 :---------------:|:------------------:|:------------------:|:----------------------:|:--------------:
  Pseudo-Mercator | 0 km² / 100%       | 86 522 km² / ~817% | 0 km / 100%            | 633 km / ~219%
  World Robinson  | 0 km² / 100%       | 4 985 km² / ~141%  | 0 km / 100%            | 233 km / ~144%
- Sphere Behrman  | -87 km² / ~99,3%     | -30 km² / ~99,8%   | -2 km / ~99,6%       | 475 km / ~189%
- Sphere Robinson | -87 km² / ~99,3%     | 4 948 km² / ~141%  | -2 km / ~99,6%       | 232 km / ~144%
+ Sphere Behrman  | -87 km² / ~99,3%   | -30 km² / ~99,8%   | -2 km / ~99,6%         | 475 km / ~189%
+ Sphere Robinson | -87 km² / ~99,3%   | 4 948 km² / ~141%  | -2 km / ~99,6%         | 232 km / ~144%
 
- Mittauksista huomataan hyvin kuinka vääristymät kasvavat projektiosta riippuen jopa lähes kymmenkertaisiksi, kun mittauksia tehdään tasolla ellipsoidin sijaan. Ellipsoidilla mitattaessa tulokset ovat keskimäärin lähempänä totuutta, sillä maapallo on todellisuudessa ellipsoidi.
+ Mittauksista huomataan hyvin kuinka vääristymät kasvavat projektiosta riippuen jopa lähes kymmenkertaisiksi, kun mittauksia tehdään tasolla ellipsoidin sijaan. Ellipsoidilla mitattaessa tulokset ovat keskimäärin lähempänä totuutta, sillä maapallon pinta on todellisuudessa lähempänä ellipsoidia kuin tasoa.
