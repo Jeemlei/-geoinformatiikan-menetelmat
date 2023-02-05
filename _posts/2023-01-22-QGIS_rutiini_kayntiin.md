@@ -6,6 +6,7 @@ layout: post
 
 Ensimmäinen työpaja antoi hyvän lähtölaukauksen kurssille.
 QGIS oli minulle jo hieman entuudestaan tuttu Johdatus geinformatiikkaan -kurssilta, jonka kävin lukuvuoden ensimmäisessä periodissa. Varsinaista käyttörutiinia ei kuitenkaan tuona aikana ehtinyt syntyä, joten pieni kertaus perusteista oli paikallaan.
+<!--excerpt_end-->
 
 ### Itämeren typpipäästöt
 

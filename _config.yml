@@ -31,3 +31,5 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+
+excerpt_separator: <!--excerpt_end-->
