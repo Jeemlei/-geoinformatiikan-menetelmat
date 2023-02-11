@@ -7,6 +7,18 @@ layout: post
 Toisessa työpajassa tarkasteltiin valintatyökaluja ja projektioiden aiheuttamia vääristymiä pinta-aloissa ja etäisyyksissä sekä pureuduttiin aineistorajapinoihin, joihin olinkin jo ehtinyt hieman tutustua edellisen viikon tehtävien yhteydessä.
 <!--excerpt_end-->
 
+### Monipuolisia valintoja
+
+Työpajan alussa kävimme läpi QGISin valintatyökaluja, joita onkin erittäin laaja kirjo. Kartalle on muunmuassa mahdollista piirtää alueita, joiden sisältä kaikki kohteet valitaan. Tietojenkäsittelytieteilijänä mielenkiintoisin työkalu oli kuitenkin "Select by Expression", jolla on mahdollista kirjoittaa monimutkaisiakin sääntöjä, jotka hyödyntävät valinnassa kohteiden attribuutteja.
+
+Teinkin "Select by Expression"-valintatyökalun avulla kartan, jossa korostin Etelä-Karjalan.
+
+<p float="center">
+    <img src="{{ site.base_url }}{% link /assets/imgs/Etelä-Karjala.png %}" width="50%" border="1">
+</p>
+
+> Etelä-Karjala eriytettynä muusta aineistosta valintatyökalun avulla
+
 ### Etäisyyksien ja pinta-alojen vertailua
 
 Tarkastelin etäisyyksien ja pinta-alojen vääristymiä Suomessa eri projektioiden välillä.
@@ -36,3 +48,10 @@ Seuraavassa taulukossa vielä muiden projektioiden mittausten erot verrattuna TM
  Sphere Robinson | -87 km² / ~99,3%   | 4 948 km² / ~141%  | -2 km / ~99,6%         | 232 km / ~144%
 
  Mittauksista huomataan hyvin kuinka vääristymät kasvavat projektiosta riippuen jopa lähes kymmenkertaisiksi, kun mittauksia tehdään tasolla ellipsoidin sijaan. Ellipsoidilla mitattaessa tulokset ovat keskimäärin lähempänä totuutta, sillä maapallon pinta on todellisuudessa lähempänä ellipsoidia kuin tasoa.
+
+#### Vääristymien visualisointi
+
+<p float="left">
+    <img src="{{ site.base_url }}{% link /assets/imgs/SphMerc.png %}" width="49%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/NPoleAzimuth.png %}" width="49.5%" border="1">
+</p>
