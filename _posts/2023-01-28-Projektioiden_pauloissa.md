@@ -9,12 +9,12 @@ Toisessa työpajassa tarkasteltiin valintatyökaluja ja projektioiden aiheuttami
 
 ### Monipuolisia valintoja
 
-Työpajan alussa kävimme läpi QGISin valintatyökaluja, joita onkin erittäin laaja kirjo. Kartalle on muunmuassa mahdollista piirtää alueita, joiden sisältä kaikki kohteet valitaan. Tietojenkäsittelytieteilijänä mielenkiintoisin työkalu oli kuitenkin "Select by Expression", jolla on mahdollista kirjoittaa monimutkaisiakin sääntöjä, jotka hyödyntävät valinnassa kohteiden attribuutteja.
+Työpajan alussa kävimme läpi _QGIS_:in valintatyökaluja, joita onkin erittäin laaja kirjo. Kartalle on muunmuassa mahdollista piirtää alueita, joiden sisältä kaikki kohteet valitaan. Tietojenkäsittelytieteilijänä mielenkiintoisin työkalu oli kuitenkin "_Select by Expression_", jolla on mahdollista kirjoittaa monimutkaisiakin sääntöjä, jotka hyödyntävät valinnassa kohteiden attribuutteja.
 
-Teinkin "Select by Expression"-valintatyökalun avulla kartan, jossa korostin Etelä-Karjalan.
+Teinkin "_Select by Expression_"-valintatyökalun avulla kartan, jossa korostin Etelä-Karjalan.
 
 <p float="center">
-    <img src="{{ site.base_url }}{% link /assets/imgs/Etelä-Karjala.png %}" width="50%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/Etelä-Karjala.png %}" width="50%">
 </p>
 
 > Etelä-Karjala eriytettynä muusta aineistosta valintatyökalun avulla
@@ -37,8 +37,8 @@ Alla kuvat mitatuista alueesta ja etäisyydestä sekä taulukko mittaustuloksist
  Sphere Behrman  | ESRI:53017 | 11 982 km²         | 12 030 km²       | 531 km                 | 1008 km 
  Sphere Robinson | ESRI:53030 | 11 982 km²         | 17 008 km²       | 531 km                 | 765 km 
 
-TM35FIN-projektiossa erot ellipsoidin ja tason pinnalta mitattujen tulosten välillä ovat erittäin pieniä, mikä osoittaa projektion hyvän soveltuvuuden Suomen kuvantamiseen tasokartalla.
-Seuraavassa taulukossa vielä muiden projektioiden mittausten erot verrattuna TM35FIN-projektioon.
+_TM35FIN_-projektiossa erot ellipsoidin ja tason pinnalta mitattujen tulosten välillä ovat erittäin pieniä, mikä osoittaa projektion hyvän soveltuvuuden Suomen kuvantamiseen tasokartalla.
+Seuraavassa taulukossa vielä muiden projektioiden mittausten erot verrattuna _TM35FIN_-projektioon.
 
  Projektio       | Ellipsoidinen alue | Karteesinen alue   | Ellipsoidinen etäisyys | Karteesinen etäisyys 
 :---------------:|:------------------:|:------------------:|:----------------------:|:--------------:
@@ -51,7 +51,22 @@ Seuraavassa taulukossa vielä muiden projektioiden mittausten erot verrattuna TM
 
 #### Vääristymien visualisointi
 
+Pinta-alavääristymien visualisointiin latasin aineiston _WFS_-rajapinnan kautta, jonka toiminnasta ja eroista muihin rajapintoihin saimme vielä aiempaa tutkiskeluani tarkemman kuvauksen.
+
+Vertailukohtana käytin _LAEA Europe_ -projektiota (EPSG:3035), joka on eurooppa keskeinen projektio ja pyrkii minimoimaan vääristymät koossa ja suunnissa. (Annoni, Luzet, Gubler & Ihde, 2001, s. 123.)
+Vertailtaviksi projektoiksi valitsin _Spehere Mercator_ -projektion (ESRI:53004) sekä _North Pole Azimuthal Equidistant_ -projektion (ESRI:102016).
+
 <p float="left">
     <img src="{{ site.base_url }}{% link /assets/imgs/SphMerc.png %}" width="49%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/NPoleAzimuth.png %}" width="49.5%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/NPoleAzimuth.png %}" width="49%" border="1">
 </p>
+
+Mercatorin projektioissa tunnetusti vääristymät kasvavat mentäessä kauemmaksi "projektiolieriön" pallonpintaa koskettavasta keskilinjasta, joka _Spehere Mercator_ -projektiossa kulkee päiväntasaajalla. Koska Suomi on hyvin kaukana päiväntasaajalta kasvavat vääristymät tasolla moninkertaisiksi mitä pohjoisemmaksi mennään, ja onkin luontevaa esittää muutos 100% askelilla.
+
+_North Pole Azimuthal Equidistant_ -projektio pitää etäisyydet keskipisteeseensä nähden oikeina (Wikimedia Foundation, 2023) ja, kuten nimestäkin voi arvata, keskipisteenä on porhjoisnapa. Koska pinta-alan vääristymät kasvavat mitä kauemmaksi keskipisteestä mennään, on vääristymien muutos visualisoinnissa päinvastainen kuin _Spehere Mercator_ -projektiolla. Muutokset ovat Suomen kohdalla kuitenkin vain muutaman prosentin luokkaa, sillä etäisyys pohjoisnavalle on vielä kohtuullisen pieni.
+
+---
+
+**Lähteet:**
+- Annoni, A., Luzet, C., Gubler, E. & Ihde, J. (2001) _Map Projections for Europe_. - Ladattu 5.2.2023. [http://mapref.org/LinkedDocuments/MapProjectionsForEurope-EUR-20120.pdf](http://mapref.org/LinkedDocuments/MapProjectionsForEurope-EUR-20120.pdf) s.123
+- Wikimedia Foundation (2023) _Azimuthal equidistant projection_ - Vierailtu 5.2.2023. [https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection](https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection)
