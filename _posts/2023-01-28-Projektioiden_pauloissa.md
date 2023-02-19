@@ -68,5 +68,5 @@ _North Pole Azimuthal Equidistant_ -projektio pitää etäisyydet keskipisteesee
 ---
 
 **Lähteet:**
-- Annoni, A., Luzet, C., Gubler, E. & Ihde, J. (2001) _Map Projections for Europe_. - Ladattu 5.2.2023. [http://mapref.org/LinkedDocuments/MapProjectionsForEurope-EUR-20120.pdf](http://mapref.org/LinkedDocuments/MapProjectionsForEurope-EUR-20120.pdf) s.123
+- Annoni, A., Luzet, C., Gubler, E. & Ihde, J. (2001) _Map Projections for Europe_. - Ladattu 5.2.2023. [http://mapref.org/LinkedDocuments/MapProjectionsForEurope-EUR-20120.pdf](http://mapref.org/LinkedDocuments/MapProjectionsForEurope-EUR-20120.pdf)
 - Wikimedia Foundation (2023) _Azimuthal equidistant projection_ - Vierailtu 5.2.2023. [https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection](https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection)
