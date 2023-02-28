@@ -4,10 +4,12 @@ date: 2023-02-28
 layout: post
 ---
 
-Viidennellä viikolla kerrattiin QGISin piirtotyökalujen käyttöä ja opeteltiin käyttämään analyyseissä hyödyksi kohteiden etäisyyksiä toisistaan.
+Viidennellä viikolla kerrattiin QGISin piirtotyökalujen käyttöä ja opeteltiin käyttämään analyyseissä hyödyksi kohteiden etäisyyksiä toisistaan. Pohdin myös blogissa hieman tähän astisia oppeja ja mietin missä olisi vielä parantamisen varaa.
 <!--excerpt_end-->
 
-#### Laskutoimituksia karttakohteista:
+Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten selvittämiseen opituilla työkaluilla. Listaankin aluksi vastaukset kaikkiin kurssimonisteen kysymyksiin.
+
+### Pornainen
 
 - Kuinka monta kilometriä tietä on Pornaisten keskustan alueella?
   - ???
@@ -56,8 +58,9 @@ Kuinka monella alueella ulkomaalaisten osuus on yli...
 - ...30%
   - ???
 
-### Uima-altaat ja saunat
+### Uima-altaita ja saunoja
 
+##### Uima-altaat
 - Kuinka monta uima-altaalla varustettua rakennusta löytyy pääkaupunkiseudulta?
   - ???
 - Kuinka paljon asuu asukkaita sellaisissa taloissa, joissa on uima-allas?
@@ -70,8 +73,8 @@ Kuinka moni edellisen kohdan taloista on...
   - ???
 - ...rivitaloja?
   - ???
-<br/>
 
+##### Saunat
 - Kuinka monessa talossa on sauna?
   - ???
 - Kuinka monta prosenttia edellisen kohdan luku on kaikista asutuista taloista pääkaupunkiseudulla?
