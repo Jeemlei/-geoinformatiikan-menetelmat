@@ -9,11 +9,11 @@ Viikon aiheina olivat rasteridatan luominen vektoriaineiston pohjalta ja rasteri
 
 ### Pääkaupunkiseudun rakennukset
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Pks_vaki250x250.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/Pks_vaki_250x250.png %}" width="100%">
 
 > 250m x 250m ruuduissa olevien asuinrakennusten keskimääräinen asukkaiden lukumäärä
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Pks_vaki500x500.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/Pks_vaki_500x500.png %}" width="100%">
 
 > 500m x 500m ruuduissa olevien asuinrakennusten keskimääräinen asukkaiden lukumäärä
 
