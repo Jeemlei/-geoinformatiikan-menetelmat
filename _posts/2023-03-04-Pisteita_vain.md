@@ -12,3 +12,9 @@ Kurssikerta alkoi pienellä ulkoilulla, jonka aikan tuotimme pistemäistä dataa
 <img src="{{ site.base_url }}{% link /assets/imgs/Kumpulan_turvallisuus.png %}" width="100%">
 
 > Kumpulan alueelta kerätystä datasta tuotettu visualisointi
+
+<img src="{{ site.base_url }}{% link /assets/imgs/maanjaristykset_90-luku.png %}" width="100%">
+
+<img src="{{ site.base_url }}{% link /assets/imgs/maanjaristykset_00-luku.png %}" width="100%">
+
+<img src="{{ site.base_url }}{% link /assets/imgs/maanjaristykset_10-luku.png %}" width="100%">
