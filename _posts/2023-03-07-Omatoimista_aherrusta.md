@@ -1,10 +1,10 @@
 ---
 title: "Omatoimista aherrusta"
-date: 2023-03-04
+date: 2023-03-07
 layout: post
 ---
 
-Viimeisellä kurssikerralla jokainen sai valita oman aiheen ja työskentely oli hyvin itsenäistä. Omaksi aiheekseni valitsin maastokartan rakentamisen maanmittauslaitoksen maastotietokannan avulla.
+Viimeisellä kurssikerralla jokainen sai valita oman aiheen ja työskentely oli hyvin itsenäistä. Omaksi aiheekseni valitsin maastokartan luomisen maanmittauslaitoksen maastotietokannan avulla.
 <!--excerpt_end-->
 
 ### Maastokarttaa rakentamassa
