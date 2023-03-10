@@ -29,10 +29,19 @@ Asetin väri asteikon vihreän päädyn erottelemaan selkeästi alueet, joilla o
 
 ### Korkeusdataa Pornaisita
 
+Toisessa tehtävässä päästiin työskentelemään rasterimuotoisen korkeusdatan kanssa ja tarkasteltavana alueena oli Pornaisten keskusta ja sen lähialueet. Korkeusdata on rasterissa esitetty harmaalla väriskaalalla, missä korkeammat arvot ovat vaaleammalla ja matalammat tummalla. Konsepti oli itselleni ennestään tuttu muun muassa pelikehityksestä, mikä teki aineiston kanssa työskentelystä intuitiivista.
+
+Alueen laajuudeen takia rasteri oli neljässä osassa. QGISin merge työkalulla rasterien ja väriskaalan yhdistäminen onnistui helposti. Yhdistetystä rasterista saatiin automaattisesti luotua korkeuskäyrät sekä rinnevarjostus, joka sulautettiin pohjakarttaan pienen kolmiulotteisuusilluusion luomiseksi.
+
 <img src="{{ site.base_url }}{% link /assets/imgs/Pornainen.png %}" width="100%">
 
 > Korkeusdatasta luodut korkeuskäyrät ja rinnevarjostus Pornaisten kartalla
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Korkeuskayrat.png %}" width="100%">
+
+
+<p float="left">
+    <img src="{{ site.base_url }}{% link /assets/imgs/Korkeuskayrat.png %}" width="49%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/peruskartta_pornainen.png %}" width="49%" border="1">
+</p>
 
 > Automaattisesti luotujen korkeuskäyrien outouksia Pornaisten keskustan tuntumassa
