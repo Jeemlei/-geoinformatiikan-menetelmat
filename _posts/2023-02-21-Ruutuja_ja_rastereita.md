@@ -33,9 +33,9 @@ Kurssin aiemmissa tehtävissä on ollut tarvetta suhteuttaa esitettyjä arvoja a
 
 Ruututeemakartalla alueet on valmiiksi jaettu standardikokoisiin alueisiin, jolloin luvut suhteutuvat automaattisesti ainakin pinta-alaan. Tämä tarkoittaa, että ainakin tietyissä tapauksissa absoluuttisten arvojen esittäminen on täysin hyväksyttävää.
 
-Tyyne Turusen blogista löytyy hyvä esimerkki alueen väkiluvun esittämisestä ruudussa absoluuttisena arvona. Tämä luo automaattisesti kartan, josta voi tarkastella väestön tiheyttä erialueilla. Vastaavan kartan luominen maakunnittain vaatisi jokaisen kunnan väestönluvun suhteuttamista kyseisen kunnan pinta-alaan, minkä jälkeen laskettua lukua voisi käyttää visualisoinnissa.
+[Tyyne Turusen blogista](https://blogs.helsinki.fi/ttyyne/2023/02/08/4-harjoituskerta-8-2-2023/) löytyy hyvä esimerkki alueen väkiluvun esittämisestä ruudussa absoluuttisena arvona. Tämä luo automaattisesti kartan, josta voi tarkastella väestön tiheyttä erialueilla. Vastaavan kartan luominen maakunnittain vaatisi jokaisen kunnan väestönluvun suhteuttamista kyseisen kunnan pinta-alaan, minkä jälkeen laskettua lukua voisi käyttää visualisoinnissa.
 
-### Korkeusdataa Pornaisita
+### Korkeusdataa Pornaisista
 
 Toisessa tehtävässä päästiin työskentelemään rasterimuotoisen korkeusdatan kanssa ja tarkasteltavana alueena oli Pornaisten keskusta ja sen lähialueet. Korkeusdata on rasterissa esitetty harmaalla väriskaalalla, missä korkeammat arvot ovat vaaleammalla ja matalammat tummalla. Konsepti oli itselleni ennestään tuttu muun muassa pelikehityksestä, mikä teki aineiston kanssa työskentelystä intuitiivista.
 
