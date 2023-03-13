@@ -4,14 +4,14 @@ date: 2023-02-28
 layout: post
 ---
 
-Viidennellä viikolla kerrattiin QGISin piirtotyökalujen käyttöä ja opeteltiin käyttämään analyyseissä hyödyksi kohteiden etäisyyksiä toisistaan. Kamppailin myös ensimmäisten kunnon haasteen kanssa, törmättyäni viimeisessä tehtävässä virheellisiin geometrioihin. Keräsin kasaan hieman vinkkejä muille saman ongelman kanssa painiville.
+Viidennellä viikolla kerrattiin QGISin piirtotyökalujen käyttöä ja opeteltiin käyttämään analyyseissä hyödyksi kohteiden etäisyyksiä toisistaan. Kamppailin myös ensimmäisen kunnon haasteen kanssa, törmättyäni viimeisessä tehtävässä virheellisiin geometrioihin. Keräsin kasaan hieman vinkkejä muille saman ongelman kanssa painiville.
 <!--excerpt_end-->
 
-Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten selvittämiseen opituilla työkaluilla. Suuressa roolissa olivat valintatyökalut ja statistics-näkymä, josta näki helposti koonteja karttatasojen attribuuttitiedoista.
+Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten selvittämiseen opituilla työkaluilla. Suuressa roolissa olivat valintatyökalut ja _Statistics_-näkymä, josta näki helposti koonteja karttatasojen attribuuttitiedoista.
 
 ### Pornainen
 
-Ensimmäisenä tarkastelussa oli sama pornaisten alue kuin edelliselläkin viikolla. Tällä kertaa hyödynnettiin kuitenkin vektorimuotoisia peltoja, teitä ja rakennuksia. Etäisyyksiin liittyvissä kysymyksissä hyödynnettiin puskurivyöhykkeitä ominaisuuksien valinnassa.
+Ensimmäisenä tarkastelussa oli sama Pornaisten alue kuin edelliselläkin viikolla. Tällä kertaa hyödynnettiin kuitenkin vektorimuotoisia peltoja, teitä ja rakennuksia. Etäisyyksiin liittyvissä kysymyksissä käytettiin puskurivyöhykkeitä ominaisuuksien valinnassa.
 
 - Kuinka monta kilometriä tietä on Pornaisten keskustan alueella?
   - 12,98km
@@ -91,17 +91,17 @@ Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/)
   </p>
   <p float="left">
     <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors_layers.PNG %}" width="50%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="48%">
+    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="48.5%">
   </p>
   <blockquote>Check Validity -työkalun luomat kolme tasoa</blockquote>
   <p>
     Pistetason attribuuttitaulusta löytyy virheen tyyppi, joka itselläni oli <i>Self-intersection</i>, eli geometriat leikkaavat itseään. Tämä on kohtuullisen helppo korjata, koska tiedämme missä virheet sijaitsevat.
   </p>
   <p>
-    Ensin valitaan muokattava taso ja asetetaan se muokkaustilaan <i>Toggle Editing</i> -napilla, jossa on keltaisen kynän kuva. Seuraavaksi valitaan <i>Vertex Tool</i> -työkalu, jonka pitäisi sijaita oikealla muutaman napin päässä edellisestä. <i>Vertex Tool</i> -työkalulla voimme liikuttaa polygonien kulmia klikkaamalla ensin kulmaa ja sen jälkeen uutta sijaintia.
+    Ensin valitaan muokattava taso ja asetetaan se muokkaustilaan <i>Toggle Editing</i> -napilla, jossa on keltaisen kynän kuva. Seuraavaksi valitaan <i>Vertex Tool</i> -työkalu, jonka pitäisi sijaita oikealla muutaman napin päässä edellisestä. <i>Vertex Tool</i> -työkalulla voimme liikuttaa polygonien kulmia klikkaamalla ensin kulmaa ja sen jälkeen uutta sijaintia. _Snapping_-ominaisuudesta voi olla apua tai haittaa polygoneja muokatessa ja sen saa vaihdettua päälle tai pois _S_-näppäintä painamalla.
   </p>
   <p>
-    Kulmien ollessa samassa sijainnissa muiden polygonien kulmien kanssa joudut ehkä muuttamaan väliaikaisesti viereisten polygonien muotoa, että pääset käsiksi onglemalliseen kulmaan.
+    Kulmien ollessa samassa sijainnissa muiden polygonien kulmien kanssa joudutaan ehkä muuttamaan väliaikaisesti viereisten polygonien muotoa, että päästään käsiksi onglemalliseen kulmaan.
   </p>
   <p>
     Ongelmana voi myös olla saman polygonin erikulmien päällekkäisyys. Tällöin voi olla järkevää poistaa ylimääräisiä kulmia klikkaamalla kulmaa kerran ja painamalla <i>Delete</i>-näppäintä.
@@ -111,7 +111,7 @@ Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/)
   </p>
 </div>
 
-Kun olin saanut geometriat korjattu sain viimeisteltyä tehtävän nopeasti. Visualisoinnissa oli kuitenkin mahdotonta saada pienillä alueilla näkymään sekä suuri numero että pylväsdiagrammi. Olenkin [Lucas Yonin](https://blogs.helsinki.fi/katuukka/2023/02/25/5-kurssikerta/) kanssa samaa mieltä, "että histogrammien käyttäminen esittämään yhden muuttujan vaihtelua kartalla on vähän huono".
+Kun olin saanut geometriat korjattu sain viimeisteltyä tehtävän nopeasti. Visualisoinnissa oli kuitenkin mahdotonta saada pienillä alueilla näkymään sekä suuri numero että pylväsdiagrammi. Olenkin [Lucas Yonin](https://blogs.helsinki.fi/katuukka/2023/02/25/5-kurssikerta/) kanssa samaa mieltä, "että histogrammien käyttäminen esittämään yhden muuttujan vaihtelua kartalla on vähän huono" ja "värigradientilla alueiden väliset erot havainnollistuvat paljon helpommin". Koropleettikartta ei myöskään sulje pois vaihtoehtoa näyttää tarkkaa lukua numerona.
 
 <img src="{{ site.base_url }}{% link /assets/imgs/uima-altaat.png %}" width="100%" border="1">
 
@@ -120,14 +120,13 @@ Kun olin saanut geometriat korjattu sain viimeisteltyä tehtävän nopeasti. Vis
   - 855
 - Kuinka paljon asuu asukkaita sellaisissa taloissa, joissa on uima-allas?
   - 12 170
-
-Kuinka moni edellisen kohdan taloista on...
-- ...omakotitaloja?
-  - 345
-- ...kerrostaloja?
-  - 181
-- ...rivitaloja?
-  - 113
+- Kuinka moni edellisen kohdan taloista on...
+  - ...omakotitaloja?
+    - 345
+  - ...kerrostaloja?
+    - 181
+  - ...rivitaloja?
+    - 113
 
 #### Saunat
 - Kuinka monessa talossa on sauna?
@@ -137,7 +136,7 @@ Kuinka moni edellisen kohdan taloista on...
 
 ### Missä nyt mennään?
 
-Koen että tällä hetkellä tekninen osaamiseni QGISin käytössä on sillä tasolla, että voisin käyttää ohjelmistoa kohtuullisen vaivatta työelämässä. Tietojenkäsittelytiedetaustani auttaa selvästi teknisten asioiden sisäistämisessä ja vastaan tulevien ongelmien ratkaisussa. Maantieteen aiempien opintojen puute puolestaan heijastuu analysointitaitoihini. Analysointitaidoissani aineistoja ja tuloksia tarkastellessa voisi olla parannettavaa.
+Koen tekninen osaamiseni QGISin käytössä olevan tällä hetkellä sillä tasolla, että voisin käyttää ohjelmistoa kohtuullisen vaivatta työelämässä. Tietojenkäsittelytiedetaustani auttaa selvästi teknisten asioiden sisäistämisessä ja vastaan tulevien ongelmien ratkaisemisessa. Maantieteen aiempien opintojen puute puolestaan heijastuu analysointitaitoihini. Analysointitaidoissani aineistoja ja tuloksia tarkastellessa voisi olla parannettavaa.
 
 ---
 
