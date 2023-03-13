@@ -84,22 +84,22 @@ Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/)
 <div style="border: solid 0.15rem; border-radius: 10px; padding: 0.5rem">
 <u>**Vinkkejä virheellisten geometrioiden löytämiseen ja korjaamiseen:**</u>
 
-Virheellisten geometrioiden löytämiseen voi käyttää _Check Validity_ -työkalua, jonka löytää helposti _Processing Toolbox_ -hakukentästä tai Vektori-valikon geometria-työkaluista. _Input Layer_ -kohtaan valitaan tarkasteltava taso ja muita asetuksia ei pitäisi olla tarvetta muuttaa. Työkalu luo kolme tasoa, joista yksi sisältää virheettömät geometriat, toinen virheelliset ja kolmas virheiden sijainnit pisteinä.
+Virheellisten geometrioiden löytämiseen voi käyttää <i>Check Validity</i> -työkalua, jonka löytää helposti <i>Processing Toolbox</i> -hakukentästä tai Vektori-valikon geometria-työkaluista. <i>Input Layer</i> -kohtaan valitaan tarkasteltava taso ja muita asetuksia ei pitäisi olla tarvetta muuttaa. Työkalu luo kolme tasoa, joista yksi sisältää virheettömät geometriat, toinen virheelliset ja kolmas virheiden sijainnit pisteinä.
 
 <p float="left">
-    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors_layers.PNG %}" width="39%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="60%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors_layers.PNG %}" width="50%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="40%" border="1">
 </p>
 
 > Check Validity -työkalun luomat kolme tasoa
 
-Pistetason attribuuttitaulusta löytyy virheen tyyppi, joka itselläni oli _Self-intersection_, eli geometriat leikkaavat itseään. Tämä on kohtuullisen helppo korjata, koska tiedämme missä virheet sijaitsevat.
+Pistetason attribuuttitaulusta löytyy virheen tyyppi, joka itselläni oli <i>Self-intersection</i>, eli geometriat leikkaavat itseään. Tämä on kohtuullisen helppo korjata, koska tiedämme missä virheet sijaitsevat.
 
-Ensin valitaan muokattava taso ja asetetaan se muokkaustilaan _Toggle Editing_ -napilla, jossa on keltaisen kynän kuva. Seuraavaksi valitaan _Vertex Tool_ -työkalu, jonka pitäisi sijaita oikealla muutaman napin päässä edellisestä. _Vertex Tool_ -työkalulla voimme liikuttaa polygonien kulmia klikkaamalla ensin kulmaa ja sen jälkeen uutta sijaintia.
+Ensin valitaan muokattava taso ja asetetaan se muokkaustilaan <i>Toggle Editing</i> -napilla, jossa on keltaisen kynän kuva. Seuraavaksi valitaan <i>Vertex Tool</i> -työkalu, jonka pitäisi sijaita oikealla muutaman napin päässä edellisestä. <i>Vertex Tool</i> -työkalulla voimme liikuttaa polygonien kulmia klikkaamalla ensin kulmaa ja sen jälkeen uutta sijaintia.
 
 Kulmien ollessa samassa sijainnissa muiden polygonien kulmien kanssa joudut ehkä muuttamaan väliaikaisesti viereisten polygonien muotoa, että pääset käsiksi onglemalliseen kulmaan.
 
-Ongelmana voi myös olla saman polygonin erikulmien päällekkäisyys. Tällöin voi olla järkevää poistaa ylimääräisiä kulmia klikkaamalla kulmaa kerran ja painamalla _Delete_-näppäintä.
+Ongelmana voi myös olla saman polygonin erikulmien päällekkäisyys. Tällöin voi olla järkevää poistaa ylimääräisiä kulmia klikkaamalla kulmaa kerran ja painamalla <i>Delete</i>-näppäintä.
 
 Lopuksi poistu muokkaustilasta ja tallenna muutokset.
 </div>
