@@ -81,7 +81,7 @@ Viimeinen tehtävä oli hieman monipuolisempi ja soveltavampi. Törmäsin myös 
 
 Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/) ja [Lucas Yoni](https://blogs.helsinki.fi/luberger/2023/02/20/viikko-5-bufferointia-reflektointia/) mainitsevat blogeissaan törmänneensä samaan virheellisiin geometrioihin liittyvään ongelmaan kuin minä. Leo kertoo ratkaisseensa ongelman automaattista _Fix geometries_ -työkalua käyttäen, mutta ei ole varma mistä ongelmassa oli kyse tai mitä työkalu teki. Lucas puolestaan onnistui paikantamaan virheelliset geometriat, mutta ei onnistunut niitä korjaamaan. Ratkaisuna hän päätyi poistamaan geometriat kokonaan.
 
-<div style="border: solid 0.15rem; border-radius: 10px; padding: 0.5rem; margin: 0.1rem; background-color: #eeeeee">
+<div style="border: solid 0.15rem; border-radius: 10px; padding: 0.5rem; margin: 0rem 0.1rem 1rem 0.1rem; background-color: #eeeeee">
   <p><u><b>Vinkkejä virheellisten geometrioiden löytämiseen ja korjaamiseen:</b></u></p>
   <p>
     Virheellisten geometrioiden löytämiseen voi käyttää <i>Check Validity</i> -työkalua, jonka löytää helposti <i>Processing Toolbox</i> -hakukentästä tai Vektori-valikon geometria-työkaluista.
