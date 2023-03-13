@@ -7,9 +7,11 @@ layout: post
 Viidennellä viikolla kerrattiin QGISin piirtotyökalujen käyttöä ja opeteltiin käyttämään analyyseissä hyödyksi kohteiden etäisyyksiä toisistaan. Pohdin myös blogissa hieman tähän astisia oppeja ja mietin missä olisi vielä parantamisen varaa.
 <!--excerpt_end-->
 
-Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten selvittämiseen opituilla työkaluilla. Listaankin aluksi vastaukset kaikkiin kurssimonisteen kysymyksiin.
+Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten selvittämiseen opituilla työkaluilla. Suuressa roolissa olivat valintatyökalut ja statistics-näkymä, josta näki helposti koonteja karttatasojen attribuuttitiedoista.
 
 ### Pornainen
+
+Ensimmäisenä tarkastelussa oli sama pornaisten alue kuin edelliselläkin viikolla. Tällä kertaa hyödynnettiin kuitenkin vektorimuotoisia peltoja, teitä ja rakennuksia. Etäisyyksiin liittyvissä kysymyksissä hyödynnettiin puskurivyöhykkeitä ominaisuuksien valinnassa.
 
 - Kuinka monta kilometriä tietä on Pornaisten keskustan alueella?
   - 12,98km
@@ -24,15 +26,19 @@ Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten
 - Kuinka monta prosenttia alueen taloista on yli kilometrin etäisyydellä Pornaisten koulusta?
   - 37,0%
 
+Kun puskurivyöhykkeiden tekemiseen oli tutustuttu yhteisesti, siirryttiin itsenäisiin tehtäviin.
+
 ### Lentokentät ja asemat
 
-##### Malmin lentokenttä:
+Lentokenttien ja asemien kanssa hyödynnettiin myös puskurivyöhykkeitä. Lentokenttien vektoritaso oli kuitenkin ensin luotava itse, mikä onnistuikin ongelmitta jo Johdatus geinformatiikkaan -kurssilta opituilla työkaluilla. Tässä vaiheessa kurssia tuntuukin siltä, että QGISin käytössä on muodostunut kohtuullisen vahva rutiini.
+
+#### Malmin lentokenttä:
 - Kaikki asukkaat 2 km säteellä kentästä?
   - 58 799
 - Kaikki asukkaat 1 km säteellä kentästä?
   - 9 049
 
-##### Helsinki-Vantaan lentokenttä:
+#### Helsinki-Vantaan lentokenttä:
 - Kaikki asukkaat 2 km säteellä kentästä?
   - 11 680
 - Kuinka monta prosenttia edellisen kohdan asukkaista asuu Helsinki-Vantaa lentokentän pahimmalla melualueella (65dB)?
@@ -42,7 +48,7 @@ Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten
 - Kuinka monta ihmistä asuisi vähintään 60dB lentomelualueella Tikkurilassa, mikäli saapuva liikenne käännettäisiin laskeutumaan tästä poikkeuksellisesta suunnasta?
   - 3 503
 
-##### Juna- ja metroasemat:
+#### Juna- ja metroasemat:
 - Kuinka monta asukasta asuu kartan alueella alle 500m päässä lähimmästä juna- tai metroasemasta?
   - 111 765
 - Kuinka monta prosenttia edellisen kohdan ihmisistä oli työikäisiä (15-64v)?
@@ -51,6 +57,9 @@ Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten
   - 21,7%
 
 ### Taajamat
+
+Taajamiin liittyvät kysymykset olivat hyvin suoraviivaisia ja vastaukset muodostuivat edellisten tehtävien jälkeen kuin suoraan liukuhihnalta.
+
 - Kuinka monta prosenttia alueen asukkaista asuu taajamissa?
   - 96,1%
 - Kuinka monta kouluikäistä asuu taajamien ulkopuolella?
@@ -58,19 +67,46 @@ Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten
 - Kuinka monta prosenttia edellisen kohdan luku on kaikista kouluikäisistä? 
   - 3,6%
 
-Kuinka monella alueella ulkomaalaisten osuus on yli...
-- ...10%
-  - 66
-- ...20%
-  - 22
-- ...30%
-  - 14
+- Kuinka monella alueella ulkomaalaisten osuus on yli...
+  - ...10%
+    - 66
+  - ...20%
+    - 22
+  - ...30%
+    - 14
 
 ### Uima-altaita ja saunoja
 
+Viimeinen tehtävä oli hieman monipuolisempi ja soveltavampi. Törmäsin myös ensimmäisiin kunnon onglemiin, jotka kuitenkin ratkesivat kohtuullisen helposti tietojenkäsittelytieteilijän rutinoituneella googlaustaidolla.
+
+Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/) ja [Lucas Yoni](https://blogs.helsinki.fi/luberger/2023/02/20/viikko-5-bufferointia-reflektointia/) mainitsevat blogeissaan törmänneensä samaan virheellisiin geometrioihin liittyvään ongelmaan kuin minä. Leo kertoo ratkaisseensa ongelman automaattista _Fix geometries_ -työkalua käyttäen, mutta ei ole varma mistä ongelmassa oli kyse tai mitä työkalu teki. Lucas puolestaan onnistui paikantamaan virheelliset geometriat, mutta ei onnistunut niitä korjaamaan. Ratkaisuna hän päätyi poistamaan geometriat kokonaan.
+
+<div style="border: solid 0.15rem; border-radius: 10px; padding: 0.5rem">
+<u>**Vinkkejä virheellisten geometrioiden löytämiseen ja korjaamiseen:**</u>
+
+Virheellisten geometrioiden löytämiseen voi käyttää _Check Validity_ -työkalua, jonka löytää helposti _Processing Toolbox_ -hakukentästä tai Vektori-valikon geometria-työkaluista. _Input Layer_ -kohtaan valitaan tarkasteltava taso ja muita asetuksia ei pitäisi olla tarvetta muuttaa. Työkalu luo kolme tasoa, joista yksi sisältää virheettömät geometriat, toinen virheelliset ja kolmas virheiden sijainnit pisteinä.
+
+<p float="left">
+    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors_layers.png %}" width="39%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.png %}" width="60%" border="1">
+</p>
+
+> Check Validity -työkalun luomat kolme tasoa
+
+Pistetason attribuuttitaulusta löytyy virheen tyyppi, joka itselläni oli _Self-intersection_, eli geometriat leikkaavat itseään. Tämä on kohtuullisen helppo korjata, koska tiedämme missä virheet sijaitsevat.
+
+Ensin valitaan muokattava taso ja asetetaan se muokkaustilaan _Toggle Editing_ -napilla, jossa on keltaisen kynän kuva. Seuraavaksi valitaan _Vertex Tool_ -työkalu, jonka pitäisi sijaita oikealla muutaman napin päässä edellisestä. _Vertex Tool_ -työkalulla voimme liikuttaa polygonien kulmia klikkaamalla ensin kulmaa ja sen jälkeen uutta sijaintia.
+
+Kulmien ollessa samassa sijainnissa muiden polygonien kulmien kanssa joudut ehkä muuttamaan väliaikaisesti viereisten polygonien muotoa, että pääset käsiksi onglemalliseen kulmaan.
+
+Ongelmana voi myös olla saman polygonin erikulmien päällekkäisyys. Tällöin voi olla järkevää poistaa ylimääräisiä kulmia klikkaamalla kulmaa kerran ja painamalla _Delete_-näppäintä.
+
+Lopuksi poistu muokkaustilasta ja tallenna muutokset.
+</div>
+
 <img src="{{ site.base_url }}{% link /assets/imgs/uima-altaat.png %}" width="100%">
 
-##### Uima-altaat
+#### Uima-altaat
 - Kuinka monta uima-altaalla varustettua rakennusta löytyy pääkaupunkiseudulta?
   - 855
 - Kuinka paljon asuu asukkaita sellaisissa taloissa, joissa on uima-allas?
@@ -84,8 +120,15 @@ Kuinka moni edellisen kohdan taloista on...
 - ...rivitaloja?
   - 113
 
-##### Saunat
+#### Saunat
 - Kuinka monessa talossa on sauna?
   - 2 169
 - Kuinka monta prosenttia edellisen kohdan luku on kaikista asutuista taloista pääkaupunkiseudulla?
   - 2,4%
+
+---
+
+**Lähteet:**
+- Mäklin, L. 2023. - Harjoitus 5. Kirjoitus LMAKLIN’S BLOG -blogissa 3.3.2023. Viitattu 10.3.2023. [https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/).
+- Yoni, L. 2023. - Viikko 5: Bufferointia & reflektointia. Kirjoitus GIS-AVAUTUMISET -blogissa 20.2.2023. Viitattu 10.3.2023. [https://blogs.helsinki.fi/luberger/2023/02/20/viikko-5-bufferointia-reflektointia/](https://blogs.helsinki.fi/luberger/2023/02/20/viikko-5-bufferointia-reflektointia/).
+- Katajamäki, T. 2023. - 5. Kurssikerta. Kirjoitus TUUKAN GIS-BLOGI -blogissa 25.2.2023. Viitattu 10.3.2023. [https://blogs.helsinki.fi/katuukka/2023/02/25/5-kurssikerta/](https://blogs.helsinki.fi/katuukka/2023/02/25/5-kurssikerta/).
