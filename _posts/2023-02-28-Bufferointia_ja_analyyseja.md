@@ -98,7 +98,7 @@ Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/)
     Pistetason attribuuttitaulusta löytyy virheen tyyppi, joka itselläni oli <i>Self-intersection</i>, eli geometriat leikkaavat itseään. Tämä on kohtuullisen helppo korjata, koska tiedämme missä virheet sijaitsevat.
   </p>
   <p>
-    Ensin valitaan muokattava taso ja asetetaan se muokkaustilaan <i>Toggle Editing</i> -napilla, jossa on keltaisen kynän kuva. Seuraavaksi valitaan <i>Vertex Tool</i> -työkalu, jonka pitäisi sijaita oikealla muutaman napin päässä edellisestä. <i>Vertex Tool</i> -työkalulla voimme liikuttaa polygonien kulmia klikkaamalla ensin kulmaa ja sen jälkeen uutta sijaintia. _Snapping_-ominaisuudesta voi olla apua tai haittaa polygoneja muokatessa ja sen saa vaihdettua päälle tai pois _S_-näppäintä painamalla.
+    Ensin valitaan muokattava taso ja asetetaan se muokkaustilaan <i>Toggle Editing</i> -napilla, jossa on keltaisen kynän kuva. Seuraavaksi valitaan <i>Vertex Tool</i> -työkalu, jonka pitäisi sijaita oikealla muutaman napin päässä edellisestä. <i>Vertex Tool</i> -työkalulla voimme liikuttaa polygonien kulmia klikkaamalla ensin kulmaa ja sen jälkeen uutta sijaintia. <i>Snapping</i>-ominaisuudesta voi olla apua tai haittaa polygoneja muokatessa ja sen saa vaihdettua päälle tai pois <i>S</i>-näppäintä painamalla.
   </p>
   <p>
     Kulmien ollessa samassa sijainnissa muiden polygonien kulmien kanssa joudutaan ehkä muuttamaan väliaikaisesti viereisten polygonien muotoa, että päästään käsiksi onglemalliseen kulmaan.
