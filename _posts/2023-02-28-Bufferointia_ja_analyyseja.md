@@ -87,8 +87,8 @@ Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/)
 Virheellisten geometrioiden löytämiseen voi käyttää _Check Validity_ -työkalua, jonka löytää helposti _Processing Toolbox_ -hakukentästä tai Vektori-valikon geometria-työkaluista. _Input Layer_ -kohtaan valitaan tarkasteltava taso ja muita asetuksia ei pitäisi olla tarvetta muuttaa. Työkalu luo kolme tasoa, joista yksi sisältää virheettömät geometriat, toinen virheelliset ja kolmas virheiden sijainnit pisteinä.
 
 <p float="left">
-    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors_layers.png %}" width="39%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.png %}" width="60%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors_layers.PNG %}" width="39%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="60%" border="1">
 </p>
 
 > Check Validity -työkalun luomat kolme tasoa
