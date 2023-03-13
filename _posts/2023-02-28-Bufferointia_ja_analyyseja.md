@@ -4,7 +4,7 @@ date: 2023-02-28
 layout: post
 ---
 
-Viidennellä viikolla kerrattiin QGISin piirtotyökalujen käyttöä ja opeteltiin käyttämään analyyseissä hyödyksi kohteiden etäisyyksiä toisistaan. Pohdin myös blogissa hieman tähän astisia oppeja ja mietin missä olisi vielä parantamisen varaa.
+Viidennellä viikolla kerrattiin QGISin piirtotyökalujen käyttöä ja opeteltiin käyttämään analyyseissä hyödyksi kohteiden etäisyyksiä toisistaan. Kamppailin myös ensimmäisten kunnon haasteen kanssa, törmättyäni viimeisessä tehtävässä virheellisiin geometrioihin. Keräsin kasaan hieman vinkkejä muille saman ongelman kanssa painiville.
 <!--excerpt_end-->
 
 Tällä kertaa tekeminen keskittyi karttojen luomisen sijaan erilaisten tulosten selvittämiseen opituilla työkaluilla. Suuressa roolissa olivat valintatyökalut ja statistics-näkymä, josta näki helposti koonteja karttatasojen attribuuttitiedoista.
@@ -81,34 +81,39 @@ Viimeinen tehtävä oli hieman monipuolisempi ja soveltavampi. Törmäsin myös 
 
 Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/) ja [Lucas Yoni](https://blogs.helsinki.fi/luberger/2023/02/20/viikko-5-bufferointia-reflektointia/) mainitsevat blogeissaan törmänneensä samaan virheellisiin geometrioihin liittyvään ongelmaan kuin minä. Leo kertoo ratkaisseensa ongelman automaattista _Fix geometries_ -työkalua käyttäen, mutta ei ole varma mistä ongelmassa oli kyse tai mitä työkalu teki. Lucas puolestaan onnistui paikantamaan virheelliset geometriat, mutta ei onnistunut niitä korjaamaan. Ratkaisuna hän päätyi poistamaan geometriat kokonaan.
 
-<div style="border: solid 0.15rem; border-radius: 10px; padding: 0.5rem">
-<p><u><b>Vinkkejä virheellisten geometrioiden löytämiseen ja korjaamiseen:</b></u></p>
-<p>
-Virheellisten geometrioiden löytämiseen voi käyttää <i>Check Validity</i> -työkalua, jonka löytää helposti <i>Processing Toolbox</i> -hakukentästä tai Vektori-valikon geometria-työkaluista. <i>Input Layer</i> -kohtaan valitaan tarkasteltava taso ja muita asetuksia ei pitäisi olla tarvetta muuttaa. Työkalu luo kolme tasoa, joista yksi sisältää virheettömät geometriat, toinen virheelliset ja kolmas virheiden sijainnit pisteinä.
-</p>
-<p float="left">
+<div style="border: solid 0.15rem; border-radius: 10px; padding: 0.5rem; margin: 0.1rem; background-color: #eeeeee">
+  <p><u><b>Vinkkejä virheellisten geometrioiden löytämiseen ja korjaamiseen:</b></u></p>
+  <p>
+    Virheellisten geometrioiden löytämiseen voi käyttää <i>Check Validity</i> -työkalua, jonka löytää helposti <i>Processing Toolbox</i> -hakukentästä tai Vektori-valikon geometria-työkaluista.
+  </p>
+  <p>
+    <i>Input Layer</i> -kohtaan valitaan tarkasteltava taso ja muita asetuksia ei pitäisi olla tarvetta muuttaa. Työkalu luo kolme tasoa, joista yksi sisältää virheettömät geometriat, toinen virheelliset ja kolmas virheiden sijainnit pisteinä.
+  </p>
+  <p float="left">
     <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors_layers.PNG %}" width="50%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="45%" border="1">
-</p>
-<blockquote>Check Validity -työkalun luomat kolme tasoa</blockquote>
-<p>
-Pistetason attribuuttitaulusta löytyy virheen tyyppi, joka itselläni oli <i>Self-intersection</i>, eli geometriat leikkaavat itseään. Tämä on kohtuullisen helppo korjata, koska tiedämme missä virheet sijaitsevat.
-</p>
-<p>
-Ensin valitaan muokattava taso ja asetetaan se muokkaustilaan <i>Toggle Editing</i> -napilla, jossa on keltaisen kynän kuva. Seuraavaksi valitaan <i>Vertex Tool</i> -työkalu, jonka pitäisi sijaita oikealla muutaman napin päässä edellisestä. <i>Vertex Tool</i> -työkalulla voimme liikuttaa polygonien kulmia klikkaamalla ensin kulmaa ja sen jälkeen uutta sijaintia.
-</p>
-<p>
-Kulmien ollessa samassa sijainnissa muiden polygonien kulmien kanssa joudut ehkä muuttamaan väliaikaisesti viereisten polygonien muotoa, että pääset käsiksi onglemalliseen kulmaan.
-</p>
-<p>
-Ongelmana voi myös olla saman polygonin erikulmien päällekkäisyys. Tällöin voi olla järkevää poistaa ylimääräisiä kulmia klikkaamalla kulmaa kerran ja painamalla <i>Delete</i>-näppäintä.
-</p>
-<p>
-Lopuksi poistu muokkaustilasta ja tallenna muutokset.
-</p>
+    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="47%">
+  </p>
+  <blockquote>Check Validity -työkalun luomat kolme tasoa</blockquote>
+  <p>
+    Pistetason attribuuttitaulusta löytyy virheen tyyppi, joka itselläni oli <i>Self-intersection</i>, eli geometriat leikkaavat itseään. Tämä on kohtuullisen helppo korjata, koska tiedämme missä virheet sijaitsevat.
+  </p>
+  <p>
+    Ensin valitaan muokattava taso ja asetetaan se muokkaustilaan <i>Toggle Editing</i> -napilla, jossa on keltaisen kynän kuva. Seuraavaksi valitaan <i>Vertex Tool</i> -työkalu, jonka pitäisi sijaita oikealla muutaman napin päässä edellisestä. <i>Vertex Tool</i> -työkalulla voimme liikuttaa polygonien kulmia klikkaamalla ensin kulmaa ja sen jälkeen uutta sijaintia.
+  </p>
+  <p>
+    Kulmien ollessa samassa sijainnissa muiden polygonien kulmien kanssa joudut ehkä muuttamaan väliaikaisesti viereisten polygonien muotoa, että pääset käsiksi onglemalliseen kulmaan.
+  </p>
+  <p>
+    Ongelmana voi myös olla saman polygonin erikulmien päällekkäisyys. Tällöin voi olla järkevää poistaa ylimääräisiä kulmia klikkaamalla kulmaa kerran ja painamalla <i>Delete</i>-näppäintä.
+  </p>
+  <p>
+    Lopuksi poistu muokkaustilasta ja tallenna muutokset.
+  </p>
 </div>
 
-<img src="{{ site.base_url }}{% link /assets/imgs/uima-altaat.png %}" width="100%">
+Kun olin saanut geometriat korjattu sain viimeisteltyä tehtävän nopeasti. Visualisoinnissa oli kuitenkin mahdotonta saada pienillä alueilla näkymään sekä suuri numero että pylväsdiagrammi. Olenkin [Lucas Yonin](https://blogs.helsinki.fi/katuukka/2023/02/25/5-kurssikerta/) kanssa samaa mieltä, "että histogrammien käyttäminen esittämään yhden muuttujan vaihtelua kartalla on vähän huono".
+
+<img src="{{ site.base_url }}{% link /assets/imgs/uima-altaat.png %}" width="100%" border="1">
 
 #### Uima-altaat
 - Kuinka monta uima-altaalla varustettua rakennusta löytyy pääkaupunkiseudulta?
@@ -130,9 +135,12 @@ Kuinka moni edellisen kohdan taloista on...
 - Kuinka monta prosenttia edellisen kohdan luku on kaikista asutuista taloista pääkaupunkiseudulla?
   - 2,4%
 
+### Missä nyt mennään?
+
+Koen että tällä hetkellä tekninen osaamiseni QGISin käytössä on sillä tasolla, että voisin käyttää ohjelmistoa kohtuullisen vaivatta työelämässä. Tietojenkäsittelytiedetaustani auttaa selvästi teknisten asioiden sisäistämisessä ja vastaan tulevien ongelmien ratkaisussa. Maantieteen aiempien opintojen puute puolestaan heijastuu analysointitaitoihini. Analysointitaidoissani aineistoja ja tuloksia tarkastellessa voisi olla parannettavaa.
+
 ---
 
 **Lähteet:**
 - Mäklin, L. 2023. - Harjoitus 5. Kirjoitus LMAKLIN’S BLOG -blogissa 3.3.2023. Viitattu 10.3.2023. [https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/).
 - Yoni, L. 2023. - Viikko 5: Bufferointia & reflektointia. Kirjoitus GIS-AVAUTUMISET -blogissa 20.2.2023. Viitattu 10.3.2023. [https://blogs.helsinki.fi/luberger/2023/02/20/viikko-5-bufferointia-reflektointia/](https://blogs.helsinki.fi/luberger/2023/02/20/viikko-5-bufferointia-reflektointia/).
-- Katajamäki, T. 2023. - 5. Kurssikerta. Kirjoitus TUUKAN GIS-BLOGI -blogissa 25.2.2023. Viitattu 10.3.2023. [https://blogs.helsinki.fi/katuukka/2023/02/25/5-kurssikerta/](https://blogs.helsinki.fi/katuukka/2023/02/25/5-kurssikerta/).
