@@ -91,7 +91,7 @@ Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/)
   </p>
   <p float="left">
     <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors_layers.PNG %}" width="50%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="47%">
+    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="48%">
   </p>
   <blockquote>Check Validity -työkalun luomat kolme tasoa</blockquote>
   <p>
