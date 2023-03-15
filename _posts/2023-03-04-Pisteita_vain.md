@@ -47,6 +47,8 @@ Tein saman kartan kolmelta eri vuosikymmeneltä, jotta voidaan tarkastella, onko
 
 > Yli 6 magnitudin maanjäristykset 2010-luvulla
 
+En tiedä ovatko luomani kartat erityisen hyödyllisiä opetuskäyttöön. Niitä tehdessä tuli kuitenkin opittua uusia asioita QGISin käytöstä ja toistot vahvistivat jo hyvää työskelntelyrutiinia.
+
 ---
 
 **Lähteet:**
