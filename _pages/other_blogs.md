@@ -4,6 +4,7 @@ layout: page
 title: Muiden blogeja
 ---
 
+> Tällä sivulla on listattuna kurssien muiden osallistujien blogeja, joihin olen viitannut teksteissäni.
 
 <ul>
     <li>

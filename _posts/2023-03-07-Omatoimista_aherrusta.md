@@ -1,5 +1,5 @@
 ---
-title: "Omatoimista aherrusta"
+title: "1.7 Omatoimista aherrusta"
 date: 2023-03-07
 layout: post
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Ruutuja ja rastereita"
+title: "1.4 Ruutuja ja rastereita"
 date: 2023-02-21
 layout: post
 ---

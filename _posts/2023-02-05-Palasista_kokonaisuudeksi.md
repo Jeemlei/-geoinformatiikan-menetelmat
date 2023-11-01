@@ -1,5 +1,5 @@
 ---
-title: "Palasista kokonaisuudeksi"
+title: "1.3 Palasista kokonaisuudeksi"
 date: 2023-02-05
 layout: post
 ---

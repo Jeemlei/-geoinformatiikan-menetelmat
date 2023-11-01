@@ -1,5 +1,5 @@
 ---
-title: "Projektioiden pauloissa"
+title: "1.2 Projektioiden pauloissa"
 date: 2023-01-28
 layout: post
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Pisteitä vain?"
+title: "1.6 Pisteitä vain?"
 date: 2023-03-04
 layout: post
 ---
