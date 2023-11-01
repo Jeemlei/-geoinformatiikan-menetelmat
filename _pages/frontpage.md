@@ -17,7 +17,7 @@ Nyt on tullut taas aika jatkaa opiskeluja, tällä kertaa [Geoinformatiikan mene
 
 ---
 
-Olen toteuttanut blogin Github Pages -sivuna yliopiston tarjoaman blogialustan sijasta.
-Blogin lähdekoodin löydät joko [tämän linkin](https://github.com/Jeemlei/geoinformatiikan-menetelmat) takaa tai Github-profiilistani, johon on linkki sivun alalaidassa.
+| Olen toteuttanut blogin Github Pages -sivuna yliopiston tarjoaman blogialustan sijasta. Blogin lähdekoodin löydät joko [tämän linkin](https://github.com/Jeemlei/geoinformatiikan-menetelmat) takaa tai Github-profiilistani, johon on linkki sivun alalaidassa. |
+|---------|
 
 ---
