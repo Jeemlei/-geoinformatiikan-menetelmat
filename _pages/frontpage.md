@@ -15,14 +15,12 @@ Kurssin jälkeen innostuin hakemaan töitä CGI:n [Space & Geo yksiköstä](http
 
 Nyt on tullut taas aika jatkaa opiskeluja, tällä kertaa [Geoinformatiikan menetelmät 2](https://studies.helsinki.fi/kurssit/opintojakso/otm-62a7830e-bf13-40ee-824f-2022337fe907/MAA-221) -kurssin parissa ArcGIS Pro:ta käyttäen, sekä jakaa jälleen raportteja kurssin etenemisestä tänne blogiin.
 
----
-
 <table>
   <thead>
     <tr>
-      <th>
+      <td>
         Olen toteuttanut blogin Github Pages -sivuna yliopiston tarjoaman blogialustan sijasta. Blogin lähdekoodin löydät joko <a href="https://github.com/Jeemlei/geoinformatiikan-menetelmat">tämän linkin</a> takaa tai Github-profiilistani, johon on linkki sivun alalaidassa.
-      </th>
+      </td>
     </tr>
   </thead>
 </table>
