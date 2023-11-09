@@ -18,7 +18,7 @@ Ensimmäisen viikon aiheena olivat overlay- eli päällekkäisyys- tai leikkausa
   <tbody>
     <tr>
       <td style="text-align: center;"> 
-        <i>Clip</i> eli leikkaus ottaa attribuutit ja geometrian kohdetasosta (<i>Input Features</i>) ja poistaa niistä kaiken leikkaustason (<i>Clip Features</i>) geometrioiden ulkopuolelle jäävän. Kohdetason geometriat voivat olla pisteitä, viivoja tai alueita, mutta leikkaustaso sisältää aina alueita.
+        <i>Clip</i> eli leikkaus ottaa attribuutit ja geometrian kohdetasosta (<i>Input Features</i>) ja poistaa niistä kaiken leikkaustason (<i>Clip Features</i>) geometrioiden ulkopuolelle jäävän. Kohdetason geometriat voivat olla pisteitä, viivoja tai alueita, mutta leikkaustaso muodostuu aina alueista.
         <br>(Holopainen et al., 2015, s. 60)
       </td>
     </tr>
@@ -34,10 +34,10 @@ Pitkän Googlailun ja monien muokkausyritysten jälkeen päädyin vain säätäm
 
 > Ensimmäisen tehtävän aineistot
 
-Visualisoinnin jälkeen oli aika pureutua itse analyysiin, jonka tarkoituksena oli tarkastella maankäyttöä Vihdintien ja Lahdenväylän lähistöllä.
-Ensin luotiin tie-geometrian ympärille muutaman sadan metrin säteellä bufferi. Tämän jälkeen tehtiin leikaus maankäyttöaineistoon käyttäen luotua bufferia leikkaustasona.
+Visualisoinnin jälkeen oli aika pureutua itse analyysiin, jonka tarkoituksena oli tarkastella maankäyttöä Vihdintien ja Lahdenväylän lähistöillä.
+Ensin luotiin tiegeometrian ympärille muutaman sadan metrin säteellä bufferi. Tämän jälkeen tehtiin leikaus maankäyttöaineistoon käyttäen luotua bufferia leikkaustasona.
 
-Lopputuloksena syntyneelle tasolle _ArcGIS_ laski automaattisesti pinta-alan neliömetreissä, josta laskettiin _Add Geometry Attributes_ -työkalulla hehtaarit. Tämän jälkeen tason atribuuttitaulu tallennettiin _csv_-tiedostona, joista sai helposti luotua alla olevat piirakkadiagrammit excelin avulla.
+Lopputuloksena syntyneen tason atribuuttitauluun _ArcGIS_ laski automaattisesti pinta-alan neliömetreissä, josta saatiin _Add Geometry Attributes_ -työkalulla hehtaarit uuteen sarakkeeseen. Tämän jälkeen atribuuttitaulu tallennettiin _csv_-tiedostona, joista sai helposti luotua alla olevat piirakkadiagrammit excelin avulla.
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk1/Vihdintie_Chart.PNG %}" width="100%">
 
@@ -64,9 +64,9 @@ Suurimmat erot alueiden maankäytössä voi huomata avokallioissa ja muussa palj
 
 Toisessa tehtävässä jatkettiin maankäyttöaineiston tutkimista ja otettiin avuksi Helsingin kaupunginosajakoa kuvaava geometria. Kaupunginosista valittiin Käpylä, Kumpula sekä Toukola ja luotiin niistä uusi taso.
 
-Tehtävän tarkoituksena oli selvittää kunkin valitun kaupunginosien luonnon ja rakennetun alan suhde toisiinsa. _Intersect_ sopi täydellisesti tähän tehtävään, sillä sen lopputuloksessa saatiin yhdistettyä maanpeite-tieto toisesta tasosta ja kaupunginosa-tieto toisesta tasosta.
+Tehtävän tarkoituksena oli selvittää kunkin valitun kaupunginosan luonnon ja rakennetun alan suhde toisiinsa. _Intersect_ sopi täydellisesti tähän tehtävään, sillä sen lopputuloksessa saatiin yhdistettyä maanpeite-tieto toisesta tasosta ja kaupunginosa-tieto toisesta tasosta.
 
-Koska maankäyttöaineistossa ei valmiiksi ollut erittelyä luonnosta ja rakennetusta alueesta, tehtiin jaottelu _Calculate Field_ -työkalulla alla olevaa python luokkaa hyödyntäen.
+Koska maankäyttöaineistossa ei valmiiksi ollut erittelyä luonnosta ja rakennetusta alueesta, tehtiin jaottelu _Calculate Field_ -työkalulla alla olevaa python funktiota hyödyntäen.
 
 ```python
 def Reclass(luokka):
