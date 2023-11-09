@@ -17,8 +17,9 @@ Ensimmäisen viikon aiheena olivat overlay- eli päällekkäisyys- tai leikkausa
 <table>
   <tbody>
     <tr>
-      <td> 
-        <i>Clip</i> eli leikkaus ottaa attribuutit ja geometrian kohdetasosta (<i>Input Features</i>) ja poistaa niistä kaiken leikkaustason (<i>Clip Features</i>) geometrioiden ulkopuolelle jäävän. Kohdetason geometriat voivat olla pisteitä, viivoja tai alueita, mutta leikkaustaso sisältää aina alueita. (Holopainen et al., 2015, s. 60)
+      <td style="text-align: center;"> 
+        <i>Clip</i> eli leikkaus ottaa attribuutit ja geometrian kohdetasosta (<i>Input Features</i>) ja poistaa niistä kaiken leikkaustason (<i>Clip Features</i>) geometrioiden ulkopuolelle jäävän. Kohdetason geometriat voivat olla pisteitä, viivoja tai alueita, mutta leikkaustaso sisältää aina alueita.
+        <br>(Holopainen et al., 2015, s. 60)
       </td>
     </tr>
   </tbody>
@@ -53,8 +54,9 @@ Suurimmat erot alueiden maankäytössä voi huomata avokallioissa ja muussa palj
 <table>
   <tbody>
     <tr>
-      <td> 
-        <i>Intersect</i> eli kaksoisleikkaus ei käytä erillistä leikkaustasoa, toisin kuin <i>Clip</i>, vaan sen sijaan yhdistää useamman kohdetason atribuutit ja geometriat näiden yhteisesti peittämiltä alueilta. (Holopainen et al., 2015, s. 60)
+      <td style="text-align: center;"> 
+        <i>Intersect</i> eli kaksoisleikkaus ei käytä erillistä leikkaustasoa, toisin kuin <i>Clip</i>, vaan sen sijaan yhdistää useamman kohdetason atribuutit ja geometriat näiden yhteisesti peittämiltä alueilta.
+        <br>(Holopainen et al., 2015, s. 60)
       </td>
     </tr>
   </tbody>
