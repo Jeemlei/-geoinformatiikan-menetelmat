@@ -14,8 +14,15 @@ Ensimmäisen viikon aiheena olivat overlay- eli päällekkäisyys- tai leikkausa
 
 ### Clip
 
-| _Clip_ eli leikkaus ottaa attribuutit ja geometrian kohdetasosta (_Input Features_) ja poistaa niistä kaiken leikkaustason (_Clip Features_) geometrioiden ulkopuolelle jäävän. Kohdetason geometriat voivat olla pisteitä, viivoja tai alueita, mutta leikkaustaso sisältää aina alueita. (Holopainen et al., 2015, s. 60) |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+<table>
+  <tbody>
+    <tr>
+      <td> 
+        <i>Clip</i> eli leikkaus ottaa attribuutit ja geometrian kohdetasosta (<i>Input Features</i>) ja poistaa niistä kaiken leikkaustason (<i>Clip Features</i>) geometrioiden ulkopuolelle jäävän. Kohdetason geometriat voivat olla pisteitä, viivoja tai alueita, mutta leikkaustaso sisältää aina alueita. (Holopainen et al., 2015, s. 60)
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Ensimmäisessä tehtävässä käytössä olivat Vihdintien ja Lahdenväylän pätkiä edustavat viivageometriat sekä aineisto Helsingin kantakaupungin pohjoispuolella olevien alueiden maankäytöstä.
 
@@ -43,8 +50,15 @@ Suurimmat erot alueiden maankäytössä voi huomata avokallioissa ja muussa palj
 
 ### Intersect
 
-| _Intersect_ eli kaksoisleikkaus ei käytä erillistä leikkaustasoa, toisin kuin _Clip_, vaan sen sijaan yhdistää useamman kohdetason atribuutit ja geometriat näiden yhteisesti peittämiltä alueilta. (Holopainen et al., 2015, s. 60) |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+<table>
+  <tbody>
+    <tr>
+      <td> 
+        <i>Intersect</i> eli kaksoisleikkaus ei käytä erillistä leikkaustasoa, toisin kuin <i>Clip</i>, vaan sen sijaan yhdistää useamman kohdetason atribuutit ja geometriat näiden yhteisesti peittämiltä alueilta. (Holopainen et al., 2015, s. 60)
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Toisessa tehtävässä jatkettiin maankäyttöaineiston tutkimista ja otettiin avuksi Helsingin kaupunginosajakoa kuvaava geometria. Kaupunginosista valittiin Käpylä, Kumpula sekä Toukola ja luotiin niistä uusi taso.
 
@@ -67,7 +81,6 @@ Tämän jälkeen aineistosta oli luonteva tehdä tuloste uusien arvojen pohjalta
 > _Intersect_-harjoituksen karttatuloste
 
 Viimeisenä vaiheena oli vielä atribuuttitaulun hyödyntäminen diagrammin muodostamisessa, kuten ensimmäisessä tehtävässä. Lopputuloksessa ehkä hieman hämää Toukolan pienin rakennustiheys, joka johtuu suuresta luonnoksi laskettavasta vesi alueesta. Kartasta on kuitenkin selkeästi nähtävissä, että Toukolan maa-alueet ovat näiden kolmen kaupunginosan tiheimmin rakennettuja.
-
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk1/Maankaytto_Chart.PNG %}" width="100%">
 
