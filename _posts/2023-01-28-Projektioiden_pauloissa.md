@@ -14,7 +14,7 @@ Työpajan alussa kävimme läpi _QGIS_:in valintatyökaluja, joita onkin erittä
 Teinkin "_Select by Expression_"-valintatyökalun avulla kartan, jossa korostin Etelä-Karjalan.
 
 <p float="center">
-    <img src="{{ site.base_url }}{% link /assets/imgs/Etelä-Karjala.png %}" width="50%">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS1/Etelä-Karjala.png %}" width="50%">
 </p>
 
 > Etelä-Karjala eriytettynä muusta aineistosta valintatyökalun avulla
@@ -25,8 +25,8 @@ Tarkastelin etäisyyksien ja pinta-alojen vääristymiä Suomessa eri projektioi
 Alla kuvat mitatuista alueesta ja etäisyydestä sekä taulukko mittaustuloksista eri projektioilla ja mittaustekniikoilla.
 
 <p float="left">
-    <img src="{{ site.base_url }}{% link /assets/imgs/TM35FIN_area.PNG %}" width="49%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/TM35FIN_dist.PNG %}" width="49.5%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS1/TM35FIN_area.PNG %}" width="49%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS1/TM35FIN_dist.PNG %}" width="49.5%" border="1">
 </p>
 
  Projektio       | ID         | Ellipsoidinen alue | Karteesinen alue | Ellipsoidinen etäisyys | Karteesinen etäisyys 
@@ -57,8 +57,8 @@ Vertailukohtana käytin _LAEA Europe_ -projektiota (EPSG:3035), joka on eurooppa
 Vertailtaviksi projektoiksi valitsin _Spehere Mercator_ -projektion (ESRI:53004) sekä _North Pole Azimuthal Equidistant_ -projektion (ESRI:102016).
 
 <p float="left">
-    <img src="{{ site.base_url }}{% link /assets/imgs/SphMerc.png %}" width="49%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/NPoleAzimuth.png %}" width="49%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS1/SphMerc.png %}" width="49%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS1/NPoleAzimuth.png %}" width="49%" border="1">
 </p>
 
 Mercatorin projektioissa tunnetusti vääristymät kasvavat mentäessä kauemmaksi "projektiolieriön" pallonpintaa koskettavasta keskilinjasta, joka _Spehere Mercator_ -projektiossa kulkee päiväntasaajalla. Koska Suomi on hyvin kaukana päiväntasaajalta kasvavat vääristymät tasolla moninkertaisiksi mitä pohjoisemmaksi mennään, ja onkin luontevaa esittää muutos 100% askelilla.

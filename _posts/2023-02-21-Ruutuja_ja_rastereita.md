@@ -15,13 +15,13 @@ Tehtävässä pääsi hyödyntämään edellisellä kurssikerralla käytettyä t
 
 Päätin toteuttaa visualisoinnin sekä 250m<sup>2</sup> että 500m<sup>2</sup> tarkkuudella ja tarkastella alueiden rakennusten keskimääräistä asukkaiden lukumäärää.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Pks_vaki_500x500.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/Pks_vaki_500x500.png %}" width="100%">
 
 > 500m x 500m ruuduissa olevien asuinrakennusten keskimääräinen asukkaiden lukumäärä
 
 Asetin väri asteikon vihreän päädyn erottelemaan selkeästi alueet, joilla on paljon muutaman ihmisen omakotitaloja. Asteikon toinen pää sisältää taas karkeammin alueet, joiden rakennuksissa asuu keskimäärin kymmeniä tai satoja asukkaita. Tämä jaottelu tuo selkeästi 500m<sup>2</sup> tarkkuudella esille kerrostalorikkaat asutuskeskittymät, kuten Espoon keskuksen ja Leppävaaran, mutta ei häivytä harvemmin asutettujen alueiden eroja, joissa voi olla paljon omakotitaloja tai pienempiä kerrostaloja.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Pks_vaki_250x250.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/Pks_vaki_250x250.png %}" width="100%">
 
 > 250m x 250m ruuduissa olevien asuinrakennusten keskimääräinen asukkaiden lukumäärä
 
@@ -41,7 +41,7 @@ Toisessa tehtävässä päästiin työskentelemään rasterimuotoisen korkeusdat
 
 Alueen laajuudeen takia rasteri oli neljässä osassa. QGISin merge työkalulla rasterien ja väriskaalan yhdistäminen onnistui helposti. Yhdistetystä rasterista saatiin automaattisesti luotua korkeuskäyrät sekä rinnevarjostus, joka sulautettiin pohjakarttaan pienen kolmiulotteisuusilluusion luomiseksi.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Pornainen.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/Pornainen.png %}" width="100%">
 
 > Korkeusdatasta luodut korkeuskäyrät ja rinnevarjostus Pornaisten kartalla
 
@@ -50,8 +50,8 @@ Vertaillessani luomiani korkeuskäyriä Maanmittauslaitoksen peruskarttalehden k
 Alla olevista kuvista voi huomata myös muita eroja. Automaattisesti luoduissa korkeuskäyrissä löytyy outoja alueita, jossa korkeus vaihtelee edestakaisin juuri korkeuskäyrän korkeuden tuntumassa. Esimerkkikuvassa tälläinen alue löytyy Mätikistö-tekstin luota.
 
 <p float="left">
-    <img src="{{ site.base_url }}{% link /assets/imgs/Korkeuskayrat.png %}" width="49%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/peruskartta_pornainen.png %}" width="49%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS1/Korkeuskayrat.png %}" width="49%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS1/peruskartta_pornainen.png %}" width="49%" border="1">
 </p>
 
 > Automaattisesti luotujen korkeuskäyrien (vas.) outouksia Pornaisten keskustan tuntumassa verrattuna Maanmittauslaitoksen peruskarttalehden korkeuskäyriin.

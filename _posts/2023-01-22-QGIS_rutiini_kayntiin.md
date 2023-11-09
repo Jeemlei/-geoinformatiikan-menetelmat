@@ -14,7 +14,7 @@ Ensimmäinen tehtävä palautti hyvin mieleen, mistä valikoista QGIS:n perus ty
 Koska työpaja eteni aikalailla esimerkkiä seuraten, jäi muutama asia karttatulosteessa epähuomiossa viimeistelemättä. Päädyinkin samaan kuin mm. T. Sahlberg ja P. Matero, jotka tekivät tulosteen uudestaan kotona.
 Tässä tehtävässä päädyin kirjoittamaan karttaselitteet englanniksi, sillä aineistokin oli englanniksi ja kartan aihe oli kansainvälinen.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/N_osuus.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/N_osuus.png %}" width="100%">
 
 > Kuva 1: Itämeren typpipäästöjen osuus valtioittain
 
@@ -24,7 +24,7 @@ Toisessa tehtävässä oli tarjolla kaksi vaikeustasoa: valmiin aineiston ja vek
 
 Aloin ensin toteuttamaan karttaa valmiilla aineistolla, mutta totesin nopeasti toistavani vain ensimmäistä tehtävää uudella aineistolla. Tein kuitenkin kartan nopeasti loppuun vahvistaakseni rutiinia ja siirryin sen jälkeen tarkastelemaan vaikeampaa vaihtoehtoa.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Tyoikaiset_kunnissa.png %}" width="50%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/Tyoikaiset_kunnissa.png %}" width="50%">
 
 > Kuva 2: Valmiista aineistosta toteutettu karttatuloste
 
@@ -35,7 +35,7 @@ Aineistoksi päätin valita Ylen julkaiseman "Väistötiloissa opiskelevat perus
 
 Harjoitus lisäsi erityisesti ymmärrystäni WFS-rajapintojen toiminnasta, csv-tiedostojen tuomisesta QGIS-projektiin ja uuden datan liittämisestä olemassa oleviin geometrioihin.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Opiskelijat_vaistotiloissa.png %}" width="75%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/Opiskelijat_vaistotiloissa.png %}" width="75%">
 
 > Kuva 3: Opiskelijat väistötiloissa vuonna 2018
 

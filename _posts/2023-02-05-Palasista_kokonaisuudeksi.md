@@ -15,7 +15,7 @@ Olinkin jo aiemmilla viikoilla tutustunut oma-aloitteisesti CSV-tidostojen käsi
 
 Koska tehtävänannossa ei ohjeistettu tekemään karttatulostetta projektista, päätin keksiä itse mielenkiintoisen visualisoinnin kootun datan pohjalta. Kartassa näkyvät öljykenttien, timanttikaivosten ja konfliktien sijainnit. Lisäksi laskin yhteen öljykenttien ja timanttikaivosten lukumäärän, miinustin niistä valtion kokemien konfliktivuosien lukumäärän ja suhteutin lopullisen luvun valtion väkilukuun. Toisin sanoen valtiot joissa öljykenttiä ja timanttikaivoksia on enemmäin kuin konfliktivuosia näkyvät kartalla vihreän sävyissä ja kun konflikteja on suhteessa enemmän on väriskaala keltaisesta punaiseen.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Oil&Diamonds_VS_Conflicts.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/Oil&Diamonds_VS_Conflicts.png %}" width="100%">
 
 > Öljykenttien ja timanttikaivosten lukumäärä verrattuna valtion kokemiin konfliktivuosiin suhteutettuna väkilukuun.
 
@@ -27,7 +27,7 @@ Tietokannoista löytyy myös tietoa luonnonvarojen löytövuosista, hyödyntämi
 
 Toinen harjoitus tehtiin hyvin itsenäisesti ja tuntui että ensimmäistä kertaa pääsi laajemmin soveltamaan useita kurssilla opittuja asioita. Hyödynsin muun muassa edellisessä tehtävässä opittua vektorien yhdistämistä, jotta sain helposti meret eroteltua maa-alueista visualisointia varten. Lisäksi käytin erilaisia laskentatyökaluja ja panostin paljon visualisoinnin yksityiskohtien säätämiseen. Uutena asiana opettelin myös datan visualisointia diagrammeilla.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/tulvaindeksi.png %}" width="100%" border="1">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/tulvaindeksi.png %}" width="100%" border="1">
 
 > Suomen valuma-alueiden järvisyys ja keskiylivirtaaman suhde keskivirtaamaan.
 

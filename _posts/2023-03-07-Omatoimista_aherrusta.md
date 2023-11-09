@@ -13,7 +13,7 @@ Kurssimateriaalissa oli vinkki [Gispo](https://www.gispo.fi/)n toteuttamasta [QG
 
 En ollut vielä valinnut miltä alueelta karttani teen, mutta päätin kurssikertaa edeltävänä iltana sen enempää miettimättä ladata uudenmaan, kanta-hämeen ja päijät-hämeen kuntien aineistot. Aineiston määrä oli kuitenkin niin valtava, että joudun jättämään lisäosan prosessoimaan yön yli. Aamulla lisäsin kartan taakse rinnevarjostuksen [Paitulin rajapinnan](https://paituli.csc.fi/webservices.html) kautta haetulla korkeusdatalla ja sain napattua seuraavan näyttökuvan ennen kampukselle lähtemistä.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/uusimaa.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/uusimaa.png %}" width="100%">
 
 > Maastotietokanta-aineistoja keskiuudeltamaalta ja pääkaupunkiseudulta
 
@@ -21,7 +21,7 @@ GIS-luokassa asensin koneelle jälleen Gispon-lisäosan, mutta tällä kertaa la
 
 Toteutin aineistolla seuraavan kartan Nuuksion alueelta. Säädin hieman muutamia symboleja ja piilotin muun muassa luonnonsuojelualueet ja kansallispuistot. Lisäksi latasin [Paitulin latauspalvelusta](https://paituli.csc.fi/download.html) rajapinnan kautta tarjottavaa korkeusdataa tarkemmat tiedostot alueesta ja toteutin niillä rinnevarjostuksen.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/nuuksio.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/nuuksio.png %}" width="100%">
 
 > Yksinkertainen maastokartta Nuuksion alueelta
 
@@ -29,7 +29,7 @@ Huomasin kuitenkin myöhemmin, että metsätyyppien symbolit olivat jääneet lo
 
 Uuden kartan päätin viimeistellä hieman huolellisemmin. Toteutin tällä kertaa myös kartan legendan, joka sisältää kaikki alueella näkyvät symbolit. Legendan toteuttaminen oli kaikista työläin vaihe, sillä koko aineisto sisältää niin monta tasoa ja symbolia. Onneksi legendatyökalussa pystyy valitsemaan vain printissä näkyvät symbolit, mikä helpotti hieman. Työtä kuitenkin riitti symbolien ulkonäön säätämisessä ja niemämisessä, mikä vaati myös maastotietokannan dokumenttien tutkiskelua.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/nuuksio_selitteet.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/nuuksio_selitteet.png %}" width="100%">
 
 > Huolellisesti viimeistelty maastokartta Nuuksion alueelta
 
@@ -39,7 +39,7 @@ Olen lopputuloksestä ylpeä ja tyytyväinen siitä, että päätin toteuttaa ka
 
 Ohjeissa rohkaistiin vielä tekemään osana työtä näkymäanalyysi (_viewshed analysis_). Pienellä googlailulla selvisi, että kyseessä on tekniikka jolla selvitetään mitkä alueet kartalla näkyvät teoriassa tietystä pisteestä katsottuna. Näkymäanalyysi tehdään korkeusdatan perusteella ja QGIS tarjosi jälleen tehtävään helppokäyttöisen työkalun.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/viewshed.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/viewshed.png %}" width="100%">
 
 > Näkymäanalyysi Nuuksiosta Haukkalammen saaresta
 

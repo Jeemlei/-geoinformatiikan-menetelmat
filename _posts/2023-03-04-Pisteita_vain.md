@@ -17,7 +17,7 @@ Interpoloinnilla saatu visualisointi on huomattavasti pisteitä informatiivisemp
 
 Yleisesti omasta visualisoinnistani voisi kuitenkin päätellä ainakin, että turvattomiksi koetut alueet keskittyvät paljon vilkkaiden teiden ja tienylitysten ympärille. Turvallisiksi taas koetaan puistoalueet ja pienempien teiden ympäristö.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/Kumpulan_turvallisuus.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/Kumpulan_turvallisuus.png %}" width="100%">
 
 > Kumpulan alueelta kerätystä datasta tuotettu visualisointi
 
@@ -35,15 +35,15 @@ _Heatmap_-työkalulla sain selkeästi esille alueet, joilla oli paljon voimakkai
 
 Tein saman kartan kolmelta eri vuosikymmeneltä, jotta voidaan tarkastella, onko voimakkaiden maanjäristysten aktiivisuudella havaittavissa vaihtelua. Omaan silmääni vaikuttaa ainakin siltä, että Thaimaan edustalla on ollut 2000-luvulla aktiivisuutta hieman enemmän. Ja tälle ajalle ajoittuu myös Suomessakin [uutisoitu](https://yle.fi/a/3-5195147)(Yle, 2004) voimakkaan tsunamin aiheuttanut maanjäristys.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/maanjaristykset_90-luku.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/maanjaristykset_90-luku.png %}" width="100%">
 
 > Yli 6 magnitudin maanjäristykset 1990-luvulla
 
-<img src="{{ site.base_url }}{% link /assets/imgs/maanjaristykset_00-luku.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/maanjaristykset_00-luku.png %}" width="100%">
 
 > Yli 6 magnitudin maanjäristykset 2000-luvulla
 
-<img src="{{ site.base_url }}{% link /assets/imgs/maanjaristykset_10-luku.png %}" width="100%">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/maanjaristykset_10-luku.png %}" width="100%">
 
 > Yli 6 magnitudin maanjäristykset 2010-luvulla
 

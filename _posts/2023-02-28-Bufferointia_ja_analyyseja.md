@@ -90,8 +90,8 @@ Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/)
     <i>Input Layer</i> -kohtaan valitaan tarkasteltava taso ja muita asetuksia ei pitäisi olla tarvetta muuttaa. Työkalu luo kolme tasoa, joista yksi sisältää virheettömät geometriat, toinen virheelliset ja kolmas virheiden sijainnit pisteinä.
   </p>
   <p float="left">
-    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors_layers.PNG %}" width="50%" border="1">
-    <img src="{{ site.base_url }}{% link /assets/imgs/geometry_errors.PNG %}" width="48.5%">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS1/geometry_errors_layers.PNG %}" width="50%" border="1">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS1/geometry_errors.PNG %}" width="48.5%">
   </p>
   <blockquote>Check Validity -työkalun luomat kolme tasoa</blockquote>
   <p>
@@ -113,7 +113,7 @@ Ainakin [Leo Mäklin](https://blogs.helsinki.fi/lmaklin/2023/03/03/harjoitus-5/)
 
 Kun olin saanut geometriat korjattu sain viimeisteltyä tehtävän nopeasti. Visualisoinnissa oli kuitenkin mahdotonta saada pienillä alueilla näkymään sekä suuri numero että pylväsdiagrammi. Olenkin [Lucas Yonin](https://blogs.helsinki.fi/katuukka/2023/02/25/5-kurssikerta/) kanssa samaa mieltä, "että histogrammien käyttäminen esittämään yhden muuttujan vaihtelua kartalla on vähän huono" ja "värigradientilla alueiden väliset erot havainnollistuvat paljon helpommin". Koropleettikartta ei myöskään sulje pois vaihtoehtoa näyttää tarkkaa lukua numerona.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/uima-altaat.png %}" width="100%" border="1">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS1/uima-altaat.png %}" width="100%" border="1">
 
 #### Uima-altaat
 - Kuinka monta uima-altaalla varustettua rakennusta löytyy pääkaupunkiseudulta?
