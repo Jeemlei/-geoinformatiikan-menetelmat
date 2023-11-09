@@ -92,8 +92,8 @@ Vaikka alussa sanoinkin, että *ArcGIS*in käyttö tuntui hieman hankalalta *QGI
 
 ---
 
-[^1]: Viimeisestä diagrammista vielä sanottakoon, että viimeistelin tehtävän kotikoneellani, jossa ei ole Microsoftin office ohjelmistoja asennettuna, joten excelin sijaan käytin Googlen sheets palvelua. Tässäkin on todettava, että myös näistä kahdesta kilpailijasta ilmaisella vaihtoedolla oli parempi käyttäjäkokemus.
-
 **Viittaukset:**
 
 - Holopainen, M., Tokola, T., Vastaranta, M., Heikkilä, J., Huitu, H., Laamanen, R., Alho, P. (2015). Geoinformatiikka luonnonvarojen hallinnassa (7. julkaisu). Helsingin yliopiston metsätieteiden laitos
+
+[^1]: Viimeisestä diagrammista vielä sanottakoon, että viimeistelin tehtävän kotikoneellani, jossa ei ole Microsoftin office ohjelmistoja asennettuna, joten excelin sijaan käytin Googlen sheets palvelua. Tässäkin tapauksessa on todettava, että myös näistä kahdesta kilpailijasta ilmaisella vaihtoedolla oli parempi käyttäjäkokemus.
