@@ -76,12 +76,24 @@ Vaikka _Aspect_-tasoa ei olekaan varsinaisesti tarkoitettu itsessään tarkastel
 
 ### Hydrologinen mallinnus
 
+Hydrologisella mallinnuksella tarkoitetaan erilaisia analyysejä veden valumiseen liittyen. (Holopainen et al., 2015, s. 51)
+
+Ennen varsinaisia analyysejä visualisoitiin korkeusdatassa olevat kuopat, eli analyysien potentiaaliset umpikujat. Korkeusdatasta luotiin ensin _Sink_-työkalulla rasteri kaikista kuopista, joka edelleen muunnettiin vektori tasoksi _Raster to Point_ -työkalulla.
+
+<p align="center">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/sinks.PNG %}" width="75%" border="1">
+</p>
+
+> Korkeusdatan kuopat visualisoituna pisteinä
+
+Kuten visualisoinnista voi huomata kuoppia oli erityisesti kanjoneissa, jotka ovat juurikin potentiaalisimpia uomien sijainteja. Kuopat oli siis täytettävä _Fill_-työkalulla, jotta hydrologinen mallinnus onnistuisi parhaalla mahdollisella tavalla. Kuopattoman korkeusmallin pohjalta luotiin virtaussuunta-rasteri _Flow Direction_ -työkalulla
+
 <table>
   <tbody>
     <tr>
       <td style="text-align: center;"> 
-        Viikon harjoitusohjeissa ollut virtaussuunta ruudukko kiinnitti huomioni tietojenkäsittelytieteen opiskelijana, sillä ilmansuuntia kuvaavat numeroarvot olivat kahden potensseja, jotka tulevat hyvin tutuiksi binääri arvojen kanssa työskennellessä. Tästä heräsi hieman tangentille lähtenyt pohdiskelu suunta-datan luonteesta.
-        Tieto on todennäköisesti tallennettu jokaista pikseliä vastaavaan kahdeksan bitin, eli yhden tavun, kokoiseen pakettiin. Tässä tietomuodossa tavun jokainen bitti vastaa yhtä ilman suuntaa ja kaikkien bittien ollessa 0 ollaan tasaisella maalla tai tieto puuttuu. Tässä muodossa data on mahdollisimman yksinkertaista ja ison rasterin laskutoimitukset varmasti helpottuvat.
+        Viikon harjoitusohjeissa ollut virtaussuunta ruudukko kiinnitti huomioni tietojenkäsittelytieteen opiskelijana. Ruudukossa ilmansuuntia kuvaavat numeroarvot olivat kahden potensseja, jotka tulevat hyvin tutuiksi binääri arvojen kanssa työskennellessä. Tästä heräsi hieman tangentille lähtenyt pohdiskelu suunta-datan luonteesta.
+        Tieto on todennäköisesti tallennettu jokaista pikseliä vastaavaan kahdeksan bitin, eli yhden tavun, kokoiseen pakettiin. Tässä tietomuodossa tavun jokainen bitti vastaa yhtä ilmansuuntaa ja kaikkien bittien ollessa 0 ollaan tasaisella maalla tai tieto puuttuu. Tässä muodossa data on mahdollisimman yksinkertaista ja isommankin rasterin laskutoimitukset varmasti helpottuvat homattavasti.
       </td>
       <td width="30%">
         <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/flowdir_table.PNG %}" border="1">
@@ -89,6 +101,18 @@ Vaikka _Aspect_-tasoa ei olekaan varsinaisesti tarkoitettu itsessään tarkastel
     </tr>
   </tbody>
 </table>
+
+Virtaussuunta-rasterin avulla saatiin vihdoin tehtyä ensimmäinen hydrologinen mallinnus _Basin_-työkalulla, joka palautti rasterin kanjonin valuma-alueista. Ja jälleen pääsimme käyttämään yhtä _Raster to..._ -työkaluista, jolla muunsimme rasterin polygoneiksi.
+
+Valuma-alueissa oli paikoittain outouksia, joissa monta yhden pikselin levyistä valuma-aluetta kurkotti tason reunaan. Oma päätelmäni tästä oli, että alueella kulkisi todellisuudessa leveämpi uoma, mutta mallinnuksemme on yksinkertaistanut virtauksen jokaisesta pikselistä vain yhteen suuntaan. Tästä johtuen leveämmät alueet pilkkoutuvat yhden pikselin levyisiksi janoiksi.
+
+<p align="center">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_1.PNG %}" width="48%" border="1">
+  &nbsp;
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_2.PNG %}" width="48%" border="1">
+</p>
+
+> Valuma-alueiden outouksia
 
 ---
 
