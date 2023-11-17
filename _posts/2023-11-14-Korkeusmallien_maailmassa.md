@@ -117,7 +117,7 @@ Valuma-alueissa oli paikoittain outouksia, joissa monta yhden pikselin levyistä
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_1.PNG %}" width="46%" border="1">
   &nbsp;
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_2.PNG %}" width="50%" border="1">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_2.PNG %}" width="49%" border="1">
 </p>
 
 > Valuma-alueiden outouksia
