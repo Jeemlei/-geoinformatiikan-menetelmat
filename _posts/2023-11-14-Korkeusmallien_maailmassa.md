@@ -10,8 +10,8 @@ Viikon aiheena oli tutustua korkeusmallien ominaisuuksiin ja hyödyntämiseen. T
 
 ## Korkeuden salat Kevon kanjonissa
 
-Tällä kertaa tarkastelussa oli Kevon kanjoni Pohjois-Lapista. Varsinaisen aineistona toimi korkeusmalli ja tukena olivat maastokartta ja ortokuvat samalta alueelta.
-Ensimmäisenä tarkasteltiin korkeusaineiston ominaisuuksia tason metatiedoista. Ei ollut yllätys, että projisoituna koordinaattijärjestelmänä oli _TM35FIN_ ja yksikköinä toimivat metrit. Spatiaaliseksi resoluutioksi osoittautui 2 metriä per pikseli ja itse rasterin koko oli 3000x3000 pikseliä, eli 36km^2^.
+Tällä kertaa tarkastelussa oli Kevon kanjoni Pohjois-Lapista. Varsinaisena aineistona toimi korkeusmalli ja tukena olivat maastokartta ja ortokuvat samalta alueelta.
+Ensimmäisenä tarkasteltiin korkeusaineiston ominaisuuksia tason metatiedoista. Ei ollut yllätys, että projisoituna koordinaattijärjestelmänä oli _TM35FIN_ ja yksikköinä toimivat metrit. Spatiaaliseksi resoluutioksi osoittautui 2 metriä per pikseli ja itse rasterin koko oli 3000x3000 pikseliä, eli 36km<sup>2</sup>.
 Alueen korkeus vaihteli suurin piirtein välillä 145m ja 423m merenpinnan yläpuolella. Alla olevassa kuvassa korkeimmat alueet on merkitty ruskealla ja matalimmat alueet tummanvihreällä.
 
 <p align="center">
@@ -33,7 +33,7 @@ Korkeusaineiston pohjalta luodut korkeuskäyrät vastasivat kohtuullisen tarkast
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/contours.PNG %}" border="1">
 
-> Automaattisesti luodut korkeuskäyrät osuvat tarkasti alla olevan maastokartan korkeuskäyriin.
+> Automaattisesti luodut korkeuskäyrät osuvat tarkasti alla olevan maastokartan korkeuskäyriin
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/contours_detail.PNG %}" width="75%" border="1">
@@ -86,7 +86,7 @@ Vaikka _Aspect_-tasoa ei olekaan varsinaisesti tarkoitettu itsessään tarkastel
   </tbody>
 </table>
 
-Ennen varsinaisia analyysejä visualisoitiin korkeusdatassa olevat kuopat, eli analyysien potentiaaliset umpikujat. Korkeusdatasta luotiin ensin _Sink_-työkalulla rasteri kaikista kuopista, joka edelleen muunnettiin vektori tasoksi _Raster to Point_ -työkalulla.
+Ennen varsinaisia analyysejä visualisoitiin korkeusdatassa olevat kuopat, eli analyysien potentiaaliset umpikujat. Korkeusdatasta luotiin ensin _Sink_-työkalulla rasteri kaikista kuopista, joka edelleen muunnettiin vektoritasoksi _Raster to Point_ -työkalulla.
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/sinks.PNG %}" width="75%" border="1">
@@ -94,7 +94,7 @@ Ennen varsinaisia analyysejä visualisoitiin korkeusdatassa olevat kuopat, eli a
 
 > Korkeusdatan kuopat visualisoituna pisteinä
 
-Kuten visualisoinnista voi huomata kuoppia oli erityisesti kanjoneissa, jotka ovat juurikin potentiaalisimpia uomien sijainteja. Kuopat oli siis täytettävä _Fill_-työkalulla, jotta hydrologinen mallinnus onnistuisi parhaalla mahdollisella tavalla. Kuopattoman korkeusmallin pohjalta luotiin virtaussuunta-rasteri _Flow Direction_ -työkalulla
+Kuten visualisoinnista voi huomata kuopat olivat erityisesti "pakkautuneet" kanjoneihin, jotka ovat juurikin potentiaalisimpia uomien sijainteja. Kuopat oli siis täytettävä _Fill_-työkalulla, jotta hydrologinen mallinnus onnistuisi parhaalla mahdollisella tavalla. Kuopattoman korkeusmallin pohjalta luotiin virtaussuunta-rasteri _Flow Direction_ -työkalulla
 
 <table>
   <tbody>
@@ -112,7 +112,7 @@ Kuten visualisoinnista voi huomata kuoppia oli erityisesti kanjoneissa, jotka ov
 
 Virtaussuunta-rasterin avulla saatiin vihdoin tehtyä ensimmäinen hydrologinen mallinnus _Basin_-työkalulla, joka palautti rasterin kanjonin valuma-alueista. Ja jälleen pääsimme käyttämään yhtä _Raster to..._ -työkaluista, jolla muunsimme rasterin polygoneiksi.
 
-Valuma-alueissa oli paikoittain outouksia, joissa monta yhden pikselin levyistä valuma-aluetta kurkotti tason reunaan. Oma päätelmäni tästä oli, että alueella kulkisi todellisuudessa leveämpi uoma, mutta mallinnuksemme on yksinkertaistanut virtauksen jokaisesta pikselistä vain yhteen suuntaan. Tästä johtuen leveämmät alueet pilkkoutuvat yhden pikselin levyisiksi janoiksi.
+Valuma-alueissa oli paikoittain outouksia, joissa monta yhden pikselin levyistä valuma-aluetta kurkotti tason reunaan vieri vieressä. Oma päätelmäni tästä oli, että alueella kulkisi todellisuudessa leveämpi uoma, mutta koska mallinnuksemme on yksinkertaistus todellisesta maailmasta, jatkaa virtaus jokaisesta pikselistä vain yhteen suuntaan. Tästä johtuen leveämmät alueet pilkkoutuvat yhden pikselin levyisiksi janoiksi.
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_1.PNG %}" width="46%" border="1">
@@ -122,7 +122,7 @@ Valuma-alueissa oli paikoittain outouksia, joissa monta yhden pikselin levyistä
 
 > Valuma-alueiden outouksia
 
-Toisena hydrologisena mallinnuksena selvitettiin alueen potentiaaliset uomat. Ensin luotiin rasteri, jossa laskettiin kullekkin pikselille, kuinka monesta muusta pikselistä siihen valuisi vettä. Koska koko korkeusrasterissa oli 36 miljoonaa pikseliä, syntyi uuteen rasteriin kaikkia arvoja nollan ja useamman miljoonan väliltä. Tästä rasterista tehtiin _Reclassify_-työkalulla muutama eri versio, joissa normalisoitiin kaikki arvot yhdeksi, jos ne ylittivät tietyn rajan ja muut arvot asetettiin nollaan. Näin saatiin kolmannella _Raster to..._ -työkalulla muunnettua pikselijonot vektoreiksi, jotka kuvastavat potentiaalisia uomia.
+Toisena hydrologisena mallinnuksena selvitettiin alueen potentiaaliset uomat. Ensin luotiin rasteri, jossa laskettiin kullekkin pikselille, kuinka monesta muusta pikselistä siihen valuisi vettä. Koska koko korkeusrasterissa oli 9 miljoonaa pikseliä, syntyi uuteen rasteriin kaikkia arvoja nollan ja useamman miljoonan väliltä. Tästä rasterista tehtiin _Reclassify_-työkalulla muutama eri versio, joissa normalisoitiin kaikki arvot yhdeksi, jos ne ylittivät tietyn rajan ja muut arvot asetettiin nollaan. Näin saatiin kolmannella _Raster to..._ -työkalulla muunnettua pikselijonot vektoreiksi, jotka kuvastavat potentiaalisia uomia.
 
 Tein normalisoinnin raja-arvoilla 100 000, 10 000 ja 1 000. Näistä korkein raja tuotti aineiston vain kaikista suurimmista uomista ja osa maastokartalla näkyvistä todellisista uomista jäi uupumaan. Keskimmäinen raja tuotti lähes kaikki maastokartalla näkyvät uomat ja loi jopa muutamia, joita ei maastokartan mukaan ole olemassa. Pienin raja tuotti jälleen valuma-alueista tuttuja yhden pikselin kokoisia outouksia.
 
