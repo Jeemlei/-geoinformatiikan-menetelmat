@@ -130,7 +130,7 @@ Tein normalisoinnin raja-arvoilla 100 000, 10 000 ja 1 000. Näistä korkein raj
 
 > Raja-arvon 1 000 tuottamia outouksia
 
-Näiden havaintojen perusteella päätin hyödyntää kahta ensimmäistä aineistoa lopullisessa visualisoinnissani. Lisäksi halusin kokeilla maastokartan hyödyntämistä _Hillshade_-tason tapaan _blend_-toiminnolla, jotta sain paikan nimiä myös näkyviin kartalle. En kuitenkaan ollut aivan vakuuttunut lopputuloksesta, joten tein karttatulosteesta myös toisen version. Lukija tuomitkoon kumpi on parempi.
+Näiden havaintojen perusteella päätin hyödyntää kahta ensimmäistä aineistoa lopullisessa visualisoinnissani. Lisäksi halusin kokeilla maastokartan hyödyntämistä _Hillshade_-tason tapaan _blend_-toiminnolla, jotta sain myös paikannimiä näkyviin kartalle. En kuitenkaan ollut aivan vakuuttunut lopputuloksesta, joten tein karttatulosteesta myös toisen version. Lukija tuomitkoon kumpi on parempi.
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/KevoUomatMaasto.png %}" border="1">
 
