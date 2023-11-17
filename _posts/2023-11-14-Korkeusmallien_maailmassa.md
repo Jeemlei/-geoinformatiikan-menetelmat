@@ -76,7 +76,15 @@ Vaikka _Aspect_-tasoa ei olekaan varsinaisesti tarkoitettu itsessään tarkastel
 
 ### Hydrologinen mallinnus
 
-Hydrologisella mallinnuksella tarkoitetaan erilaisia analyysejä veden valumiseen liittyen. (Holopainen et al., 2015, s. 51)
+<table>
+  <tbody>
+    <tr>
+      <td style="text-align: center;"> 
+        Hydrologisella mallinnuksella tarkoitetaan erilaisia analyysejä veden valumiseen liittyen. (Holopainen et al., 2015, s. 51)
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Ennen varsinaisia analyysejä visualisoitiin korkeusdatassa olevat kuopat, eli analyysien potentiaaliset umpikujat. Korkeusdatasta luotiin ensin _Sink_-työkalulla rasteri kaikista kuopista, joka edelleen muunnettiin vektori tasoksi _Raster to Point_ -työkalulla.
 
@@ -95,7 +103,7 @@ Kuten visualisoinnista voi huomata kuoppia oli erityisesti kanjoneissa, jotka ov
         Viikon harjoitusohjeissa ollut virtaussuunta ruudukko kiinnitti huomioni tietojenkäsittelytieteen opiskelijana. Ruudukossa ilmansuuntia kuvaavat numeroarvot olivat kahden potensseja, jotka tulevat hyvin tutuiksi binääri arvojen kanssa työskennellessä. Tästä heräsi hieman tangentille lähtenyt pohdiskelu suunta-datan luonteesta.
         Tieto on todennäköisesti tallennettu jokaista pikseliä vastaavaan kahdeksan bitin, eli yhden tavun, kokoiseen pakettiin. Tässä tietomuodossa tavun jokainen bitti vastaa yhtä ilmansuuntaa ja kaikkien bittien ollessa 0 ollaan tasaisella maalla tai tieto puuttuu. Tässä muodossa data on mahdollisimman yksinkertaista ja isommankin rasterin laskutoimitukset varmasti helpottuvat homattavasti.
       </td>
-      <td width="30%">
+      <td width="30%" style="text-align: center;">
         <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/flowdir_table.PNG %}" border="1">
       </td>
     </tr>
@@ -107,12 +115,26 @@ Virtaussuunta-rasterin avulla saatiin vihdoin tehtyä ensimmäinen hydrologinen 
 Valuma-alueissa oli paikoittain outouksia, joissa monta yhden pikselin levyistä valuma-aluetta kurkotti tason reunaan. Oma päätelmäni tästä oli, että alueella kulkisi todellisuudessa leveämpi uoma, mutta mallinnuksemme on yksinkertaistanut virtauksen jokaisesta pikselistä vain yhteen suuntaan. Tästä johtuen leveämmät alueet pilkkoutuvat yhden pikselin levyisiksi janoiksi.
 
 <p align="center">
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_1.PNG %}" width="48%" border="1">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_1.PNG %}" width="46%" border="1">
   &nbsp;
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_2.PNG %}" width="48%" border="1">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_basin_2.PNG %}" width="50%" border="1">
 </p>
 
 > Valuma-alueiden outouksia
+
+Toisena hydrologisena mallinnuksena selvitettiin alueen potentiaaliset uomat. Ensin luotiin rasteri, jossa laskettiin kullekkin pikselille, kuinka monesta muusta pikselistä siihen valuisi vettä. Koska koko korkeusrasterissa oli 36 miljoonaa pikseliä, syntyi uuteen rasteriin kaikkia arvoja nollan ja useamman miljoonan väliltä. Tästä rasterista tehtiin _Reclassify_-työkalulla muutama eri versio, joissa normalisoitiin kaikki arvot yhdeksi, jos ne ylittivät tietyn rajan ja muut arvot asetettiin nollaan. Näin saatiin kolmannella _Raster to..._ -työkalulla muunnettua pikselijonot vektoreiksi, jotka kuvastavat potentiaalisia uomia.
+
+Tein normalisoinnin raja-arvoilla 100 000, 10 000 ja 1 000. Näistä korkein raja tuotti aineiston vain kaikista suurimmista uomista ja osa maastokartalla näkyvistä todellisista uomista jäi uupumaan. Keskimmäinen raja tuotti lähes kaikki maastokartalla näkyvät uomat ja loi jopa muutamia, joita ei maastokartan mukaan ole olemassa. Pienin raja tuotti jälleen valuma-alueista tuttuja yhden pikselin kokoisia outouksia.
+
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/weird_1k.PNG %}" border="1">
+
+> Raja-arvon 1 000 tuottamia outouksia
+
+Näiden havaintojen perusteella päätin hyödyntää kahta ensimmäistä aineistoa lopullisessa visualisoinnissani. Lisäksi halusin kokeilla maastokartan hyödyntämistä _Hillshade_-tason tapaan _blend_-toiminnolla, jotta sain paikan nimiä myös näkyviin kartalle. En kuitenkaan ollut aivan vakuuttunut lopputuloksesta, joten tein karttatulosteesta myös toisen version. Lukija tuomitkoon kumpi on parempi.
+
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/KevoUomatMaasto.png %}" border="1">
+
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk2/KevoUomatValuma.png %}" border="1">
 
 ---
 
