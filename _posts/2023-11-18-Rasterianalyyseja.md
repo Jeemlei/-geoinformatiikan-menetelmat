@@ -12,4 +12,4 @@ DRAFT
 
 > Eri puutyyppien biomassa Kevon kanjonin alueella
 
-Lataa yksittäiset kartat: <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_lp.png %}" download>Lehtipuut</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ma.png %}" download>Männyt</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ku.png %}" download>Kuuset</a>
+Lataa yksittäiset kartat: | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_lp.png %}" download>Lehtipuut</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ma.png %}" download>Männyt</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ku.png %}" download>Kuuset</a>
