@@ -20,7 +20,7 @@ Biomassa-aineistot oli jaoteltu puulajien mukaan lehtipuihin, mäntyihin ja kuus
 
 > Eri puutyyppien biomassa Kevon kanjonin alueella (kartta vaihtuu 5s välein)
 
-Lataa yksittäiset kartat: <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_lp.png %}" download>Lehtipuut</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ma.png %}" download>Männyt</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ku.png %}" download>Kuuset</a>
+Lataa yksittäiset kartat: | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_lp.png %}" download>Lehtipuut</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ma.png %}" download>Männyt</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ku.png %}" download>Kuuset</a>
 
 Biomassakartoista voi huomata, että lehtipuut viihtyvät paremmin valoisilla rinteillä, jotka osoittava kohti etelää, kun taas havupuita on enemmän pohjoiseen osoittavilla varjoisemmilla rinteillä. Kuvista on selvää, että lehtipuut menestyvät laajimmalla alueella ja näin todennäköisesti biomassaa on myös eniten, mutta männyillä on enemmän biomassaa niiden kaikista vehreimmillä alueilla. Kuusi näyttää pärjäävän heikoiten ja tiiviimpiä rykelmiä löytyykin vain aivan kanjonin pohjalla virtaavan uoman tuntumasta. Todennäköisesti muut alueet ovatkin liian karuja kosteammasta maaperästä nauttivalle kuuselle.
 
