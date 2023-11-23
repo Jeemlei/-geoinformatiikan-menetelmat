@@ -90,7 +90,7 @@ Tämän jälkeen tuotettiin korkeusvyöhykkeet käyttämällä _Reclassify_-työ
 
 > Korkeusvyöhykkeet Kevon kanjonissa
 
-Vyöhykerasteria hyödyntäen saatiin jälleen laskettua tutkittavien aineistojen tunnusluvut taulukkoon.
+Vyöhykerasteria hyödyntäen saatiin jälleen laskettua tutkittavien aineistojen tunnusluvut taulukkoihin.
 
 #### Latvuspeitto lehtipuut
 
