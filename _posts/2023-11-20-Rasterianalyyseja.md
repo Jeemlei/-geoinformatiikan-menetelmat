@@ -10,7 +10,7 @@ Kolmannella viikolla jatkettiin Kevon kanjonin alueen tutkimista erilaisten rast
 
 ## Aineistot
 
-Biomassa-aineistojen yhteydestä löytyi _README_-tiedosto, jossa oli kuvailtu aineistoa ja miten se oli tuotettu. Aineiston tuottamisessa oli hyödynnetty hyödynnetty maastomittauksia yhdessä Sentinel-2 satelliittien monispektri-instrumenteilla (_MSI_[^1]) ja Landsat 8 satelliitin operatiivisella maankuvaajalla (_OLI_[^2]) kerättyjen kuvien kanssa. Kartat toteutettiin pääasiassa vuoden 2019 mittauksilla ja puuttuvaa dataa täydennettiin vuosien 2013, 2015 ja 2017 tuloksilla. Lopputuotoksessa biomassan yksikkönä on _10kg/ha_ ja rasterin spatiaalinen resoluutio on _16m\*16m_.
+Biomassa-aineistojen yhteydestä löytyi _README_-tiedosto, jossa oli kuvailtu aineistoa ja miten se oli tuotettu. Aineiston tuottamisessa oli hyödynnetty hyödynnetty maastomittauksia yhdessä Sentinel-2 satelliittien monispektri-instrumenteilla (_MSI_)[^1] ja Landsat 8 satelliitin operatiivisella maankuvaajalla (_OLI_)[^2] kerättyjen kuvien kanssa. Kartat toteutettiin pääasiassa vuoden 2019 mittauksilla ja puuttuvaa dataa täydennettiin vuosien 2013, 2015 ja 2017 tuloksilla. Lopputuotoksessa biomassan yksikkönä on _10kg/ha_ ja rasterin spatiaalinen resoluutio on _16m\*16m_.
 
 ### Kokonaisbiomassat
 
