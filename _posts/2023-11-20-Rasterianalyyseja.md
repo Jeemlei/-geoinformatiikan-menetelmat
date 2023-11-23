@@ -26,17 +26,15 @@ Biomassakartoista voi huomata, että lehtipuut viihtyvät paremmin valoisilla ri
 
 ### Uomien etäisyysvyöhykkeet
 
-Seuraavassa työvaiheessa hyödynnettiin edellisen viikon suurimpia potentiaalisia uomia. Ensin jokaiselle pikselille laskettiin etäisyysarvo lähimpään uomaan _Euclidean distance_ -työkalulla.
+Seuraavassa työvaiheessa hyödynnettiin edellisen viikon suurimpia potentiaalisia uomia. Ensin jokaiselle pikselille laskettiin etäisyysarvo lähimpään uomaan _Euclidean distance_ -työkalulla. Syntyneestä aineistosta saatiin helposti laskettua parin sadan metrin etäisyysvyöhykkeet edelliseltä viikolta tutulla _Reclassify_-työkalulla.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/EuclideanDist.PNG %}" border="1">
+<p align="center">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/EuclideanDist.PNG %}" width="48%" border="1">
+  &nbsp;
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/EuclideanDistReclass.PNG %}" width="48%" border="1">
+</p>
 
-> Etäisyysarvot laskettuna suurista potentiaalisista uomista
-
-Syntyneestä aineistosta saatiin helposti laskettua parin sadan metrin etäisyys vyöhykkeet edelliseltä viikolta tutulla _Reclassify_-työkalulla.
-
-<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/EuclideanDistReclass.PNG %}" border="1">
-
-> Etäisyys vyöhykkeet suurten potentiaalisten uomien ympärillä
+> Etäisyysarvot ja niistä luodut vyöhykkeet suurten potentiaalisten uomien ympärillä
 
 Viimeiseksi hyödynnettiin aiemmin luotuja kokonaisbiomassoja etäisyysvyöhykkeiden kanssa ja tuotettiin _Zonal statistics as Table_ -työkalulla taulukot, joissa on kirjattuna biomassa-aineistojen tilastollisia tunnuslukuja eri etäisyysvyöhykkeillä.
 
