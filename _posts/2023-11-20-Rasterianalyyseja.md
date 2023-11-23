@@ -18,7 +18,7 @@ Biomassa-aineistot oli jaoteltu puulajien mukaan lehtipuihin, mäntyihin ja kuus
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm.gif %}" border="1">
 
-> Eri puutyyppien biomassa Kevon kanjonin alueella
+> Eri puutyyppien biomassa Kevon kanjonin alueella (kartta vaihtuu 5s välein)
 
 Lataa yksittäiset kartat: <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_lp.png %}" download>Lehtipuut</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ma.png %}" download>Männyt</a> | <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/bm_ku.png %}" download>Kuuset</a>
 
@@ -30,7 +30,7 @@ Seuraavassa työvaiheessa hyödynnettiin edellisen viikon suurimpia potentiaalis
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk3/EuclideanDist.PNG %}" border="1">
 
-> Etäisyysarvot suurista potentiaalisista uomista
+> Etäisyysarvot laskettuna suurista potentiaalisista uomista
 
 Syntyneestä aineistosta saatiin helposti laskettua parin sadan metrin etäisyys vyöhykkeet edelliseltä viikolta tutulla _Reclassify_-työkalulla.
 
@@ -42,41 +42,38 @@ Viimeiseksi hyödynnettiin aiemmin luotuja kokonaisbiomassoja etäisyysvyöhykke
 
 #### Biomassa lehtipuut
 
-| Etäisyys uomasta (m) | min (t/ha) | max (t/ha) | Keskiarvo (t/ha) | Keskihajonta (t/ha) | Summa (t)    |
-| -------------------- | ---------- | ---------- | ---------------- | ------------------- | ------------ |
-| 0 - 200              | 0          | 65,58      | 4,14             | 6,98                | 190 617,76   |
-| 200 - 400            | 0          | 39,49      | 1,22             | 3,95                | 46 587,51    |
-| 400 - 600            | 0          | 38,73      | 0,81             | 3,23                | 21 988,00    |
-| 600 - 800            | 0          | 39,26      | 0,86             | 3,29                | 14 267,28    |
-| 800 - 1000           | 0          | 32,23      | 0,56             | 2,17                | 4 501,54     |
-| 1000 - 1300          | 0          | 13,49      | 0,31             | 1,17                | 1 036,89     |
-|                      |            |            |                  |                     | = 278 998,98 |
+| Etäisyys uomasta (m) | min (t/ha) | max (t/ha) | Keskiarvo (t/ha) | Mediaani (t/h) | Keskihajonta (t/ha) |
+| -------------------- | ---------- | ---------- | ---------------- | -------------- | ------------------- |
+| 0 - 200              | 0          | 65,58      | 4,14             | 0              | 6,98                |
+| 200 - 400            | 0          | 39,49      | 1,22             | 0              | 3,95                |
+| 400 - 600            | 0          | 38,73      | 0,81             | 0              | 3,23                |
+| 600 - 800            | 0          | 39,26      | 0,86             | 0              | 3,29                |
+| 800 - 1000           | 0          | 32,23      | 0,56             | 0              | 2,17                |
+| 1000 - 1300          | 0          | 13,49      | 0,31             | 0              | 1,17                |
 
 #### Biomassa männyt
 
-| Etäisyys uomasta (m) | min (t/ha) | max (t/ha) | Keskiarvo (t/ha) | Keskihajonta (t/ha) | Summa (t)    |
-| -------------------- | ---------- | ---------- | ---------------- | ------------------- | ------------ |
-| 0 - 200              | 0          | 74,32      | 4,88             | 11,82               | 224 963,07   |
-| 200 - 400            | 0          | 73,72      | 0,60             | 4,37                | 22 785,87    |
-| 400 - 600            | 0          | 80,64      | 0,33             | 3,16                | 8 910,47     |
-| 600 - 800            | 0          | 67,73      | 0,32             | 3,09                | 5 349,98     |
-| 800 - 1000           | 0          | 72,84      | 0,58             | 4,49                | 4 601,29     |
-| 1000 - 1300          | 0          | 65,51      | 0,40             | 3,66                | 1 310,35     |
-|                      |            |            |                  |                     | = 267 921,03 |
+| Etäisyys uomasta (m) | min (t/ha) | max (t/ha) | Keskiarvo (t/ha) | Mediaani (t/h) | Keskihajonta (t/ha) |
+| -------------------- | ---------- | ---------- | ---------------- | -------------- | ------------------- |
+| 0 - 200              | 0          | 74,32      | 4,88             | 0              | 11,82               |
+| 200 - 400            | 0          | 73,72      | 0,60             | 0              | 4,37                |
+| 400 - 600            | 0          | 80,64      | 0,33             | 0              | 3,16                |
+| 600 - 800            | 0          | 67,73      | 0,32             | 0              | 3,09                |
+| 800 - 1000           | 0          | 72,84      | 0,58             | 0              | 4,49                |
+| 1000 - 1300          | 0          | 65,51      | 0,40             | 0              | 3,66                |
 
 #### Biomassa kuuset
 
-| Etäisyys uomasta (m) | min (t/ha) | max (t/ha) | Keskiarvo (t/ha) | Keskihajonta (t/ha) | Summa (t)   |
-| -------------------- | ---------- | ---------- | ---------------- | ------------------- | ----------- |
-| 0 - 200              | 0          | 35,22      | 0,52             | 1,71                | 24 164,61   |
-| 200 - 400            | 0          | 11,53      | 0,02             | 0,33                | 865,34      |
-| 400 - 600            | 0          | 7,35       | 0,01             | 0,26                | 402,24      |
-| 600 - 800            | 0          | 6,16       | 0,02             | 0,29                | 303,79      |
-| 800 - 1000           | 0          | 6,44       | 0,04             | 0,40                | 294,60      |
-| 1000 - 1300          | 0          | 8,07       | 0,04             | 0,43                | 135,36      |
-|                      |            |            |                  |                     | = 26 165,94 |
+| Etäisyys uomasta (m) | min (t/ha) | max (t/ha) | Keskiarvo (t/ha) | Mediaani (t/h) | Keskihajonta (t/ha) |
+| -------------------- | ---------- | ---------- | ---------------- | -------------- | ------------------- |
+| 0 - 200              | 0          | 35,22      | 0,52             | 0              | 1,71                |
+| 200 - 400            | 0          | 11,53      | 0,02             | 0              | 0,33                |
+| 400 - 600            | 0          | 7,35       | 0,01             | 0              | 0,26                |
+| 600 - 800            | 0          | 6,16       | 0,02             | 0              | 0,29                |
+| 800 - 1000           | 0          | 6,44       | 0,04             | 0              | 0,40                |
+| 1000 - 1300          | 0          | 8,07       | 0,04             | 0              | 0,43                |
 
-Taulukot vahvistavat jo kartoista tehdyt havainnot: kuusten kokonaisbiomassa on huomattavasti pienempi kuin lehtipuilla sekä männyillä. Ero on suurin piirtein kymmenkertainen. Lisäksi tiheimmät puustokeskittymät löytyvät selvästi uomien läheisyydestä kaikilla puulajeilla, mikä myös oli havaittavissa kartoista. Taulukkojen avulla voidaan siis todentaa, että karttavisualisoinneissa on onnistuttu keskeisen tiedon välittämisessä.
+Taulukot vahvistavat jo kartoista tehdyt havainnot: kuusten kokonaisbiomassa on huomattavasti pienempi kuin lehtipuilla sekä männyillä. Ero on suurin piirtein kymmenkertainen. Lisäksi tiheimmät puustokeskittymät löytyvät selvästi uomien läheisyydestä kaikilla puulajeilla, mikä myös oli havaittavissa kartoista. Taulukkojen avulla voidaan siis todentaa, että karttavisualisoinneissa on onnistuttu keskeisen tiedon välittämisessä. Tämän lisäksi huomataan jokaisen puulajin kohdalla mediaanista, että suurin osa pikseleistä sisältää biomassaa alle tonnin hehtaaria kohden.
 
 ### Korkeusvyöhykkeet ja latvuspeitto
 
