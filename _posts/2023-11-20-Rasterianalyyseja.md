@@ -115,6 +115,8 @@ Harjoituksen päätteeksi tulokset vielä visualisoitiin kartoiksi.
 
 ---
 
+**Viittaukset:**
+
 [^1]: MultiSpectral Instrument [https://sentinel.esa.int/web/sentinel/missions/sentinel-2/instrument-payload](https://sentinel.esa.int/web/sentinel/missions/sentinel-2/instrument-payload)
 [^2]: Operational Land Imager [https://earth.esa.int/eogateway/instruments/oli-landsat-8-](https://earth.esa.int/eogateway/instruments/oli-landsat-8-)
 [^3]: Tomppo, E. & Halme, M. 2004. Using coarse scale forest variables as ancillary information and weighting of variables in k-NN estimation: a genetic algorithm approach. Remote Sensing of Environment 92: 1-20.
