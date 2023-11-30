@@ -38,7 +38,9 @@ Soveltuvuus analyysissä tarkoituksena oli löytää Kevon kanjonin alueelta tel
 
 <i>ModelBuilder</i>illa eri aineistot ja työkalut linkitetään yhteen, niin että kussakin vaiheessa käytetyn työkalun tuotos toimii syötteenä seuraavan vaiheen työkalulle. Toteutuksen jälkeen koko työputken pystyy suorittamaan yhtä nappia painamalla, niin monta kertaa kuin haluaa. Tämä helpottaa erityisesti pienten muutosten ja eri lähtöaineistojen testaamista.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk4/Analysis_Model.PNG %}" border="1">
+<a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk4/Analysis_Model.PNG %}" target="_blank">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk4/Analysis_Model.PNG %}" border="1">
+</a>
 
 > Soveltuvuusanalyysin lopullinen malli
 
