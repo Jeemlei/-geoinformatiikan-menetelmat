@@ -30,7 +30,7 @@ Seuraavaksi rasteriin liitettiin taulukko, jossa oli selitteet maankäyttöluoki
 
 Omassa kartassani käytin tason kaksi tarkkuutta, sillä mielestäni se tarjosi hieman tarkempia tasoja enemmän visuaalista selkeyttä kuitenkaan yleistämättä liikaa. Syvempää pohdiskelua varten tarkemmat luokkamäärittelyt olisivat ehkä olleet parempi valinta, mutta tuottamastani kartasta on kuitenkin hyvin havaittavissa esimerkiksi tiheämmän metsän ja kosteikkojen keskittyminen vesistöjen ympärille. Lisäksi aiemmilta viikoilta tuttu _Hillshade_-aineisto auttaa hieman hahmottamaa, että korkeilla huipuilla maasto on avoimempaa.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk4/corine_2018.png %}" border="1">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk4/Corine_2018.png %}" border="1">
 
 ## Soveltuvuusanalyysi
 
@@ -38,7 +38,7 @@ Soveltuvuus analyysissä tarkoituksena oli löytää Kevon kanjonin alueelta tel
 
 <i>ModelBuilder</i>illa eri aineistot ja työkalut linkitetään yhteen, niin että kussakin vaiheessa käytetyn työkalun tuotos toimii syötteenä seuraavan vaiheen työkalulle. Toteutuksen jälkeen koko työputken pystyy suorittamaan yhtä nappia painamalla, niin monta kertaa kuin haluaa. Tämä helpottaa erityisesti pienten muutosten ja eri lähtöaineistojen testaamista.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk4/Amaöysis_Model.PNG %}" border="1">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk4/Analysis_Model.PNG %}" border="1">
 
 > Soveltuvuusanalyysin lopullinen malli
 
@@ -61,7 +61,7 @@ Kahdessa viimeisessä työvaiheessa malli vielä poistaa 0-soluilta arvon kokona
 
 Lopputuloksesta huomaa, että maanpeittoaineiston spatiaalinen resoluutio ei ollu ehkä tarpeeksi tarkka, sillä paikoittain soveltuvuuspolygonit leikkaavat uomia. Toisaalta myös kriteerejä olisi voinut muokata, esimerkiksi asettamalla uomien soveltuvuusbufferille ylärajan lisäksi alarajan.
 
-<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk4/Amaöysis_Model.PNG %}" border="1">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk4/Kevo_Tent.png %}" border="1">
 
 > Soveltuvuusanalyysin tuottamat polygonit
 
