@@ -73,6 +73,6 @@ Soveltuvuus analyysi avaa mahdollisuuksia erilaisten aineistojen ja kriteerien h
 
 **Viittaukset:**
 
-[^1]: https://www.eea.europa.eu/help/faq/what-is-corine-land-cover
-[^2]: https://land.copernicus.eu/en/products/corine-land-cover
-[^3]: https://ckan.ymparisto.fi/dataset/corine-maanpeite-2018
+[^1]: [https://www.eea.europa.eu/help/faq/what-is-corine-land-cover](https://www.eea.europa.eu/help/faq/what-is-corine-land-cover)
+[^2]: [https://land.copernicus.eu/en/products/corine-land-cover](https://land.copernicus.eu/en/products/corine-land-cover)
+[^3]: [https://ckan.ymparisto.fi/dataset/corine-maanpeite-2018](https://ckan.ymparisto.fi/dataset/corine-maanpeite-2018)
