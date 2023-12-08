@@ -40,7 +40,7 @@ Tein vahingossa aluksi visualisoinnin väärin päin, koska vaellusreitti oli di
 
 ### Mihin masto?
 
-Seuraavaksi heräsikin kysymys miten GSM-kuuluvuutta voitaisiin parantaa reitillä tehokkaimmin. Sopivan lisämaston paikkaa lähdettiin selvittämään käänteisesti edellisen kohdan tulosten perusteella. Päätin asettaa jatkoanalyysin <i>ModelBuild</i>eriin työputken jatkoksi.
+Seuraavaksi heräsikin kysymys miten GSM-kuuluvuutta voitaisiin parantaa reitillä tehokkaimmin. Sopivaa paikkaa lisämastolle lähdettiin selvittämään käänteisesti edellisen kohdan tulosten perusteella. Päätin asettaa jatkoanalyysin <i>ModelBuild</i>eriin työputken jatkoksi.
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk5/ex2&3model.PNG %}" border="1">
