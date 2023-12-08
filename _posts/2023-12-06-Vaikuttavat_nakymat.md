@@ -85,3 +85,5 @@ Seuraavaksi lisättiin uusi masto ja ajettiin _ModelBuilder_ malli uudelleen. Ir
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk5/vaellusreitti_GSM_new.png %}" border="1">
 </p>
+
+Loppujen lopuksi näkyvyys analyysi GSM-kuuluvuuden yhteydessä antaa kuitenkin vain karkean kuvan todellisesta kuuluvuudesta. Oikeassa elämässä esimerkiksi kasvillisuus saattaa heikentää signaalia tai erilaiset pinnat voivat heijastaa signaalin sijainteihin, joihin ei ole suoraa näköyhteyttä. Kaikki huomioon otettavat lisämuuttujat tekevät prosessoinnista kuitenkin aina raskaampaa ja toteuttamamme analyysi toimii kyllä todennäköisesti hyvänä pohjatietona esimerkkiksi maastomittausten toteuttamiseen.
