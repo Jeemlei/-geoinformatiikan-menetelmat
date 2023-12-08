@@ -16,7 +16,7 @@ Käytettävissä oli korkeusmalli Inarin pohjoispuolisesta lapista ja pisteainei
 
 > Viikon 5 aineistot
 
-Lisäksi analyysejä varten digitoitiin manuaalisesti vaellusreitti Kevon tutkimusaseman ja Karigasniementien parkkipaina välillä. Käytin digitoinnissa apuna _Open Street Map_ -taustakarttaa, jossa todellinen vaellusreitti näkyi. Vaellusreitin lopulliseksi pituudeksi tuli noin 65km.
+Lisäksi analyysejä varten digitoitiin manuaalisesti vaellusreitti Kevon tutkimusaseman ja Karigasniementien parkkipaikan välillä. Käytin digitoinnissa apuna _Open Street Map_ -taustakarttaa, jossa todellinen vaellusreitti näkyi. Vaellusreitin lopulliseksi pituudeksi tuli noin 65km.
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk5/vaellusreitti.png %}" border="1">
