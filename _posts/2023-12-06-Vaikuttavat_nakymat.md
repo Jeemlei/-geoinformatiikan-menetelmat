@@ -72,7 +72,7 @@ Joka tapauksessa sain kahdeksan tunnin tuotoksen avulla selvitettyä tarkan piks
 
 > Potentiaalisen GSM-tukiaseman sijainnin arvaus (.vas) ja analyysin perusteella valittu paikka
 
-Syytän kuitenkin arviointi virheestä aiemmin mainitsemaani visualisointivirhettä. Olin nimittäin ajatellut kuuluvuualueita katvealueina ja valinnut vain koko alueen korkeimman kohdan, sillä rinne näytti vain laskevan sieltä "katvealueita" kohti. Todellisuudessa selkeästi suurin katvealue jäi pitkän kanjonin keskelle, joten uuden GSM-maston sijainnista onkin loogisesti näköyhteys kanjoniin pitkittäin reitin kulkusuunnassa.
+Syytän kuitenkin huonosta arviosta aiemmin mainitsemaani visualisointivirhettä. Olin nimittäin ajatellut kuuluvuualueita katvealueina ja valinnut vain koko alueen korkeimman kohdan, sillä rinne näytti vain laskevan sieltä "katvealueita" kohti. Todellisuudessa selkeästi suurin katvealue jäi pitkän kanjonin keskelle, joten uuden GSM-maston sijainnista onkin loogisesti näköyhteys kanjoniin pitkittäin reitin kulkusuunnassa.
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk5/potential_tower.png %}" border="1">
