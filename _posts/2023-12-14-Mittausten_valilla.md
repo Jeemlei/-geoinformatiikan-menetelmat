@@ -21,7 +21,7 @@ Viikolla kuusi tutustuttiin neljään deterministiseen interpolointimenetelmää
 
 Tutkittavana aineistona toimivat vuoden 2020 lämpötilamittaukset eri puolilta Suomea. Koska arvot olivat lämpötiloja, pyrin visualisoinneissani käyttämään positiivisille arvoille punaisen sävyjä ja negatiivisille sinisen sävyjä. Lisäksi mielestäni oli luontaista asettaa värien edustamat arvovälit yhtä suuriksi toisiinsa verrattuna, jolloin esimerkiksi kapeampi värikaistale kuvaa loogisesti nopeampaa lämpötilan muutosta kahden alueen välillä kuin leveämpi.
 
-### <i>Thiessen</i>in plygonit
+### Thiessenin plygonit
 
 _Thiessenin polygonit_ on hyvin yksinkertainen menetelmä, jossa kunkin lähtöaineiston pisteen ympärille luodaan polygoni, jonka jokainen kohta on lähempänä alkuperäistä pistettä kuin mitään muuta aineiston pistettä. Luotu polygoni saa alkuperäisen pisteen arvon.
 
