@@ -68,7 +68,7 @@ _IDW_-interpoloinnin asetusten optimoimiseen käytettiin <i>ArcGIS</i>in _Geosta
 
 > _Geostatistical Wizard_-työkalulla valitut _IDW_-interpoloinnin asetukset ja virhemarginaalit
 
-_IDW_-interpoloinnin lopputulos on selvästi tähän astisista menetelmistä luonnollisimman näköinen, mutta sen alkuperäisiin arvoihin tuottamat virheet ovat merkittävä haittapuoli lämpötilaa tutkittaessa.
+_IDW_-interpoloinnin lopputulos on selvästi tähän astisista menetelmistä luonnollisimman näköinen, mutta sen alkuperäisiin arvoihin tuottamat virheet ovat pieni haittapuoli lämpötilaa tutkittaessa.
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/IDW.png %}" width="90%" border="1">
