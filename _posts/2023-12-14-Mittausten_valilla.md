@@ -12,12 +12,12 @@ Kuinka esittää pintamaisia ilmiöitä, kun mittauksista saadaan vain pistemäi
 
 Viikolla kuusi tutustuttiin neljään deterministiseen interpolointimenetelmään, jotka tuottavat pisteaineiston pohjalta jatkuvan aineiston joko polygoneina tai rasterina.
 
-| Menetelmä                                | Vaikutusalue | Alkuperäiset arvot |
-| ---------------------------------------- | ------------ | ------------------ |
-| Thiessenin polygonit                     | lokaali      | säilyvät           |
-| Trendipintainterpolointi                 | globaali     | voivat muuttua     |
-| Inverse Distance Weighted -interpolointi | lokaali      | voivat muuttua     |
-| Spline interpolointi                     | lokaali      | säilyvät           |
+| Menetelmä                                | Arvon vaikutus | Alkuperäiset arvot |
+| ---------------------------------------- | -------------- | ------------------ |
+| Thiessenin polygonit                     | lokaali        | säilyvät           |
+| Trendipintainterpolointi                 | globaali       | voivat muuttua     |
+| Inverse Distance Weighted -interpolointi | lokaali        | voivat muuttua     |
+| Spline interpolointi                     | lokaali        | säilyvät           |
 
 Tutkittavana aineistona toimivat vuoden 2020 lämpötilamittaukset eri puolilta Suomea. Koska arvot olivat lämpötiloja, pyrin visualisoinneissani käyttämään positiivisille arvoille punaisen sävyjä ja negatiivisille sinisen sävyjä. Lisäksi mielestäni oli luontaista asettaa värien edustamat arvovälit yhtä suuriksi toisiinsa verrattuna, jolloin esimerkiksi kapeampi värikaistale kuvaa loogisesti nopeampaa lämpötilan muutosta kahden alueen välillä kuin leveämpi.
 
