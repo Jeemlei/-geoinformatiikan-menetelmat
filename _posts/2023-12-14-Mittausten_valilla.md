@@ -35,7 +35,9 @@ _Thiessenin polygonit_ poikkeaa kolmesta muusta menetelmästä siinä, että se 
 
 ### Trendipintainterpolointi
 
-Trendipintainterpolinneissa pikseleiden arvojen laskemisessa käytetään polynomifunktiota, joka pyritään sovittamaan vastaamaan lähtöaineiston pisteiden arvoja mahdollisimman hyvin. Polynomifunktion aste vaikuttaa siihen kuinka lähelle todellisuutta päästään. Viikon harjoituksissa käytettiin ensimmäisen, toisen ja kolmannen asteen polynomifunktioita, jotka antavat vain karkean kuvan tarkasteltavan muuttujan globaalista muutossuunnasta.
+Trendipintainterpolinneissa pikseleiden arvojen laskemisessa käytetään polynomifunktiota, joka pyritään sovittamaan vastaamaan lähtöaineiston pisteiden arvoja mahdollisimman hyvin. Polynomifunktion aste vaikuttaa siihen kuinka lähelle todellisuutta päästään.
+
+Viikon harjoituksissa käytettiin ensimmäisen, toisen ja kolmannen asteen polynomifunktioita, jotka antavat vain karkean kuvan tarkasteltavan muuttujan globaalista muutossuunnasta. Lopputuloksesta on siis vaikea tehdä tarkkoja päätelmiä alueiden todellisista keskilämpötiloista, sillä jokainen arvo lähtöaineistossa vaikuttaa jokaiseen lopputuloksen arvoon ja lähes kaikki arvot ovat todennäköisesti edes hieman vääristyneitä. Kartasta voidaan kuitenkin nähdä trendinä, että lämpötilat kylmenevät pohjoiseen ja koilliseen liikuttaessa.
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta1.png %}" width="45%" border="1">
