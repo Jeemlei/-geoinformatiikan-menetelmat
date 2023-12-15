@@ -10,7 +10,7 @@ Kuinka esittää pintamaisia ilmiöitä, kun mittauksista saadaan vain pistemäi
 
 ## Deterministisiä interpolintimenetelmiä
 
-Viikolla kuusi tutustuttiin neljään deterministiseen interpolointimenetelmään, jotka tuottavat pisteaineiston pohjalta jatkuvan aineiston.
+Viikolla kuusi tutustuttiin neljään deterministiseen interpolointimenetelmään, jotka tuottavat pisteaineiston pohjalta jatkuvan aineiston joko polygoneina tai rasterina.
 
 | Menetelmä                                | Vaikutusalue | Alkuperäiset arvot |
 | ---------------------------------------- | ------------ | ------------------ |
