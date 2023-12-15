@@ -40,10 +40,16 @@ Trendipintainterpolinneissa pikseleiden arvojen laskemisessa käytetään polyno
 Viikon harjoituksissa käytettiin ensimmäisen, toisen ja kolmannen asteen polynomifunktioita, jotka antavat vain karkean kuvan tarkasteltavan muuttujan globaalista muutossuunnasta. Lopputuloksesta on siis vaikea tehdä tarkkoja päätelmiä alueiden todellisista keskilämpötiloista, sillä jokainen arvo lähtöaineistossa vaikuttaa jokaiseen lopputuloksen arvoon ja lähes kaikki arvot ovat todennäköisesti edes hieman vääristyneitä. Kartasta voidaan kuitenkin nähdä trendinä, että lämpötilat kylmenevät pohjoiseen ja koilliseen liikuttaessa.
 
 <p align="center">
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta1.png %}" width="45%" border="1">
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta2.png %}" width="45%" border="1">
+  <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta1.png %}" target="_blank">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta1.png %}" width="45%" border="1">
+  </a>
+  <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta2.png %}" target="_blank">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta2.png %}" width="45%" border="1">
+  </a>
   <br>&nbsp;<br>
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta3.png %}" width="45%" border="1">
+  <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta3.png %}" target="_blank">
+    <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta3.png %}" width="45%" border="1">
+  </a>
 </p>
 
 > Lämpötilamittauksista kolmen eri asteen funktioilla interpoloidut trendipinnat
