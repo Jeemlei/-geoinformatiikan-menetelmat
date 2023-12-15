@@ -8,6 +8,8 @@ DRAFT
 
 <!--excerpt_end-->
 
+| Menetelmä | Vaikutusalue | Virheiden tyyppi | Alkuperäiset arvot |
+
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Thiessen.png %}" width="90%" border="1">
 </p>
@@ -15,11 +17,10 @@ DRAFT
 > Thiessenin polygoneilla interpoloidut lämpötilamittaukset
 
 <p align="center">
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta1.png %}" width="32%" border="1">
-  &nbsp;
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta2.png %}" width="32%" border="1">
-  &nbsp;
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta3.png %}" width="32%" border="1">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta1.png %}" width="45%" border="1">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta2.png %}" width="45%" border="1">
+  <br>
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Trendipinta3.png %}" width="45%" border="1">
 </p>
 
 > Kolmen eri asteen funktioilla interpoloidut trendipinnat lämpötilamittauksista
