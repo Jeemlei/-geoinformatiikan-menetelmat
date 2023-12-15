@@ -51,7 +51,7 @@ Seuraavaksi heräsikin kysymys miten GSM-kuuluvuutta voitaisiin parantaa reitill
 Työskentelyohjeissa neuvottiin laskemaan tuotoksen tarkkuutta, mutta päätin kuitenkin kokeilla mitä korkeusmallin resoluutiolla tehty laskenta tuottaisi. Ensimmäisen prosentin jälkeen laskin, että koko analyysissä kestäisi noin 8 tuntia, joten jätin koneen raksuttamaan yön yli.
 
 <p align="center">
-  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk5/high_res_time.PNG %}" width="125%" border="1">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk5/high_res_time.PNG %}" width="90%" border="1">
 </p>
 
 > Korkeusmallin resoluutiolla ajetun _Visibility_-analyysin prosessointi aika
