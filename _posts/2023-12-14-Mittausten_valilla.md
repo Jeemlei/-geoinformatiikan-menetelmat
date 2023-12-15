@@ -88,7 +88,7 @@ _Spline_-interpoloinnilla toteutettiin 12 kuukauden aikasarja keskilämpötilois
 
 > ModelBuilder työputki 12kk aikasarjan luomiseen
 
-Viikon aineistossa oli mukana myös valmis symbologia visualisointia varten, jonka liitin työputken loppuun. Valmis tyyli sisälsi huomattavasti enemmän lämpötilaluokkia kuin omat visualisointini aiemmissa kartoissa. Tämä luo kokonaisuuteen ehkä hieman enemmän sekavuutta, mutta mahdollista toisaalta paikallisten muutosten yksityiskohtaisemman tarkastelun. Lopputulos antaa joka tapauksessa selkeän kuvan vuodenaikojen tuomasta lämpötilavaihtelusta eri puolilla Suomea.
+Viikon aineistossa oli mukana myös valmis symbologia visualisointia varten, jonka liitin työputken loppuun. Valmis tyyli sisälsi huomattavasti enemmän lämpötilaluokkia kuin omat visualisointini aiemmissa kartoissa. Tämä luo kokonaisuuteen ehkä hieman enemmän sekavuutta, mutta mahdollistaa toisaalta paikallisten muutosten yksityiskohtaisemman tarkastelun. Lopputulos antaa joka tapauksessa selkeän kuvan vuodenaikojen tuomasta lämpötilavaihtelusta eri puolilla Suomea.
 
 <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Spline_map_highres.png %}" target="_blank">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk6/Spline_map_lowres.png %}" border="1">
