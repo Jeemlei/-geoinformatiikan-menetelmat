@@ -11,7 +11,9 @@ DRAFT
 - Etsin alueita joissa vaikuttaisi olevan korkeusvaihtelua
 - Latasin korkeusdataa yhdeksältä viereiseltä karttalehdeltä
 
-<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/DEM_mosaic.PNG %}" border="1">
+<p align="center">
+  <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/DEM_mosaic.PNG %}" border="1">
+</p>
 
 > Paitulista ladatut korkeusmallit
 
