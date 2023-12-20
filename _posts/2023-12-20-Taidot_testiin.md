@@ -10,7 +10,7 @@ DRAFT
 
 - Etsin alueita joissa vaikuttaisi olevan korkeusvaihtelua
 - Latasin korkeusdataa yhdeksältä viereiseltä karttalehdeltä
-<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Area.png %}" border="1">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/DEM_mosaic.PNG %}" border="1">
 
 > Paitulista ladatut korkeusmallit
 
@@ -27,14 +27,24 @@ DRAFT
 - Rinnehahmotelma-tasolle piirsin silmämääräisesti _Slope_-tason ja _HillShade_-tasolla parannellun korkeusmallin perusteella hahmotelmat rinteistä.
 - Palveluhahmotelma-tasolle piirsin silmämääräisesti _Slope_-tason perusteella alueet, jotka olisivat potentiaalisesti tarpeeksi tasaisia rakennuksille tai parkkipaikalle.
 - Tein hahmotelmatasoista kolmiulotteiset _Interpolate Shape_-työkalulla
-<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Hahmotelmat.png %}" border="1">
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Hahmotelmat.PNG %}" border="1">
 
 > Hahmotellut rinteet ja alueet palveluille
 
 - Aloin suunnitella <i>ModelBuilder</i>illa työputkea, joka tuottaisi korkeusmallin ja hahmotelmieni perusteella polygonitasot todellisista rinteistä ja sopivista palvelualueista.
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/ModelBuilder.PNG %}" border="1">
+
+> <i>ModelBuilder</i>in työvaiheet
+
 - Työputkessa luodaan korkeusmallista _Slope_- ja _Aspect_-tasot joista tehdään _Reclassify_-työkalulla kolme maskia: pohjois-kaakko välille suuntautuvat rinteet, 10&deg;-55&deg; jyrkät rinteet ja tasaiset alueet (0&deg;-7&deg;)
 - Jyrkistä rinteistä ja rinteensuunta maskista luodaan vielä _Raster Calculator_ -työkalulla yhdistelmämaski
 - Yhdistelmä maskista ja tasaisten alueiden maskista luodaan polygonitasot _Raster To Polygon_ -työkalulla
 - Rinnehahmotelmien ympärille luodaan 10m bufferit
 - _Clip_-työkalulla leikataan buffereista pois lasketteluun sopimattomat alueet yhdistelmämaskipolygoneilla
 - _Clip_-työkalulla leikataan palveluhahmotelmista liian jyrkät alueet tasaisten alueiden polygoneilla
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Rinnekahvila.PNG %}" border="1">
+
+> Pitkien rinteiden välissä on tilaa hyvän kokoiselle rinnekahvilalle
+
+<img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Suunnitelma.png %}" border="1">
+
