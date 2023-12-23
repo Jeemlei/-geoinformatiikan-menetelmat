@@ -6,10 +6,13 @@ layout: post
 
 DRAFT
 
+Viimeisellä viikolla sovellettiin kurssin aikana läpikäytyjä analyysejä ja demonstroitiin mitä on tullut opittua. Tehtävänä oli tehdä pienimuotoinen suunnitelma uudesta laskettelukeskuksesta.
+
 <!--excerpt_end-->
 
-- Etsin alueita joissa vaikuttaisi olevan korkeusvaihtelua
-- Latasin korkeusdataa yhdeksältä viereiseltä karttalehdeltä
+## Alueen valinta ja pohja-aineisto
+
+Ensin piti löytää sopiva alue, josta etsiä keskukselle optimaalista sijaintia korkeusdatan avulla. Hain [paikkatietoikkunasta](https://kartta.paikkatietoikkuna.fi/) eri nimisiä vaaroja ja tarkastelin aluiden korkeuskäyriä maastokartalta. Lopulta päädyin Pielisen ja Koitereen välille, missä näytti olevan huomattavan paljon korkeusvaihtelua. Latasin alueelta yhdeksän karttalehden korkeusdatan [Paitulin latauspalvelusta](https://paituli.csc.fi/download.html).
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/DEM_mosaic.PNG %}" border="1">
@@ -17,14 +20,15 @@ DRAFT
 
 > Paitulista ladatut korkeusmallit
 
-- Yhdistin tasot _Mosaic To New Raster_ -työkalulla
-- Tein _HillShade_ tason
-- Tein slope analyysin ja visualisoin jyrkkyydet rinteiden haastavuuden mukaan
-- Valitsin näiden perustella sopivan oloisen alueen
+Yhdistin aineistot yhdeksi korkeusmalliksi _Mosaic To New Raster_ -työkalulla. Loin korkeusmallin pohjalta _HillShade_ tason ja toteutin _Slope_-analyysin, jonka tuotoksessa visualisoin 10&deg;-55&deg; jyrkät rinteet kurssimateriaalissa kuvatun vaikeusasteikon mukaa.
+
+Näiden visualisointien ja mittaustyökalun avulla valitsin rinteen, jossa oli laajoja yhtenäisiä vaikeusasteikon kriteerit täyttäviä alueita ja pituutta useampi sata metriä.
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Area.png %}" border="1">
 
 > Visualisoitu _Slope_-taso ja _HillShade_-tasolla paranneltu korkeusmalli
+
+## Aineistojen valmistelu
 
 - Loin kolme uutta tasoa: Alue, Rinnehahmotelma ja Palveluhahmotelma
 - Alue-tasolle piirsin laatikon alueen ympärille ja asetin tämän tason _Geoprocessing Environment_ -asetuksissa _Processing Extent_ ehdoksi
@@ -35,6 +39,8 @@ DRAFT
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Hahmotelmat.PNG %}" border="1">
 
 > Hahmotellut rinteet ja alueet palveluille
+
+## Suunnitelman toteutus
 
 - Aloin suunnitella <i>ModelBuilder</i>illa työputkea, joka tuottaisi korkeusmallin ja hahmotelmieni perusteella polygonitasot todellisista rinteistä ja sopivista palvelualueista.
 
@@ -56,6 +62,8 @@ DRAFT
 </p>
 
 > Pitkien rinteiden välissä on tilaa hyvän kokoiselle rinnekahvilalle
+
+### Valmis suunnitelma
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Suunnitelma.png %}" border="1">
 
