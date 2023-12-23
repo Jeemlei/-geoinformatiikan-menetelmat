@@ -4,8 +4,6 @@ date: 2023-12-20
 layout: post
 ---
 
-DRAFT
-
 Viimeisellä viikolla sovellettiin kurssin aikana läpikäytyjä analyysejä ja demonstroitiin mitä on tullut opittua. Tehtävänä oli tehdä pienimuotoinen suunnitelma uudesta laskettelukeskuksesta.
 
 <!--excerpt_end-->
@@ -46,7 +44,7 @@ Lopuksi laitoin rinne- ja palveluhahmotelmat mukailemaan korkeusmallia _Interpol
 
 ## Suunnitelman toteutus
 
-- Aloin suunnitella <i>ModelBuilder</i>illa työputkea, joka tuottaisi korkeusmallin ja hahmotelmieni perusteella polygonitasot todellisista rinteistä ja sopivista palvelualueista.
+Aloin suunnitella <i>ModelBuilder</i>illa työputkea, joka tuottaisi korkeusmallin ja hahmotelmieni perusteella polygonitasot todellisista rinteistä ja sopivista palvelualueista.
 
 <a href="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/ModelBuilder.PNG %}" target="_blank">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/ModelBuilder.PNG %}" border="1">
@@ -54,20 +52,28 @@ Lopuksi laitoin rinne- ja palveluhahmotelmat mukailemaan korkeusmallia _Interpol
 
 > <i>ModelBuilder</i>in työvaiheet
 
-- Työputkessa luodaan korkeusmallista _Slope_- ja _Aspect_-tasot joista tehdään _Reclassify_-työkalulla kolme maskia: pohjois-kaakko välille suuntautuvat rinteet, 10&deg;-55&deg; jyrkät rinteet ja tasaiset alueet (0&deg;-7&deg;)
-- Jyrkistä rinteistä ja rinteensuunta maskista luodaan vielä _Raster Calculator_ -työkalulla yhdistelmämaski
-- Yhdistelmä maskista ja tasaisten alueiden maskista luodaan polygonitasot _Raster To Polygon_ -työkalulla
-- Rinnehahmotelmien ympärille luodaan 10m bufferit
-- _Clip_-työkalulla leikataan buffereista pois lasketteluun sopimattomat alueet yhdistelmämaskipolygoneilla
-- _Clip_-työkalulla leikataan palveluhahmotelmista liian jyrkät alueet tasaisten alueiden polygoneilla
+Työputken ensimmäisessä vaiheessa luodaan korkeusmallista _Slope_- ja _Aspect_-tasot joista tehdään _Reclassify_-työkalulla kolme maskia: pohjois-kaakko välille suuntautuvat rinteet, 10&deg;-55&deg; jyrkät rinteet ja tasaiset alueet (0&deg;-7&deg;). Jyrkistä rinteistä ja rinteensuunta maskista luodaan vielä _Raster Calculator_ -työkalulla yhdistelmämaski.
+
+Seuraavaksi yhdistelmä maskista ja tasaisten alueiden maskista luodaan polygonitasot _Raster To Polygon_ -työkalulla. Lisäksi rinnehahmotelmien ympärille luodaan rinnealueita kuvaavat 10m bufferit.
+
+Lopuksi _Clip_-työkalulla leikataan buffereista pois lasketteluun sopimattomat alueet yhdistelmämaskista luoduilla polygoneilla ja palveluhahmotelmista liian jyrkät alueet tasaisten alueiden polygoneilla.
+
+Pitkien rinteiden väliin jäi pieni tasainen alue. Tutkin vielä mittaustyökalulla mahtuisiko paikalle rakennus vai sopisiko se paremmin esimerkiksi hiihtohissin poistumispaikaksi.
 
 <p align="center">
   <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Rinnekahvila.PNG %}" border="1">
 </p>
 
-> Pitkien rinteiden välissä on tilaa hyvän kokoiselle rinnekahvilalle
+> Pitkien rinteiden välissä on tilaa esimerkiksi hyvän kokoiselle rinnekahvilalle
 
 ### Valmis suunnitelma
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Suunnitelma.png %}" border="1">
 
+> 2D- ja 3D-näkymät Uuronvaaran laskettelukeskus -suunnitelmasta
+
+Suunnitelmaa olisi voinut vielä täydentää hiihtohisseillä ja teillä, jotka eivät vaadi yhtä tasaisia alueita kuin muut palvelut. Soveltuvuusanalyysiä olisi voinut myös parantaa lisäaineistoilla, esimerkiksi varmistamalla, että maaperän koostumus on sopivaa rakennettavalle infrastruktuurille. Biomassa-aineistojen avulla olisi myös mahdollista selvittää kuinka paljon metsää joudutaan kaatamaan keskuksen tieltä.
+
+Suunnitelman toteutus sujui ilman suurempia vaikeuksia ja tuntuukin, että kurssin aikana on syntynyt hyvä rutiini <i>ArcGIS</i>in käytössä. Loppujen lopuksi työskentely on hyvin samanlaista kuin <i>QGIS</i>in kanssa ja hyvien tiedonhakutaitojen ansiosta ongelmat analyysien kanssa ovat vain hidasteita eivätkä esteistä.
+
+Kurssin hyödyllisin oppi on ollut <i>ModelBilder</i>in olemassa olo. Lisäksi syventyminen hydrologisen mallintamisen ja näkyvyysanalyysin toimintaan konepellin alla oli erittäin mielenkiintoista.
