@@ -30,11 +30,15 @@ Näiden visualisointien ja mittaustyökalun avulla valitsin rinteen, jossa oli l
 
 ## Aineistojen valmistelu
 
-- Loin kolme uutta tasoa: Alue, Rinnehahmotelma ja Palveluhahmotelma
-- Alue-tasolle piirsin laatikon alueen ympärille ja asetin tämän tason _Geoprocessing Environment_ -asetuksissa _Processing Extent_ ehdoksi
-- Rinnehahmotelma-tasolle piirsin silmämääräisesti _Slope_-tason ja _HillShade_-tasolla parannellun korkeusmallin perusteella hahmotelmat rinteistä.
-- Palveluhahmotelma-tasolle piirsin silmämääräisesti _Slope_-tason perusteella alueet, jotka olisivat potentiaalisesti tarpeeksi tasaisia rakennuksille tai parkkipaikalle.
-- Tein hahmotelmatasoista kolmiulotteiset _Interpolate Shape_-työkalulla
+Seuraavaksi aloin valmistella aineistoja soveltuvuusanalyysiä varten. Aluksi loin kolme uutta vektori-tasoa: Alue, Rinnehahmotelma ja Palveluhahmotelma.
+
+Alue-tasolle piirsin laatikon tutkittavan alueen ympärille. Asetin tämän tason _Geoprocessing Environment_ -asetuksissa _Processing Extent_ ehdoksi, jotta tulevat analyysit toteutettaisiin kaikki vain tutkittavalta alueelta.
+
+Rinnehahmotelma-tasolle piirsin silmämääräisesti hahmotelmat rinteistä. Varmistin _Slope_-tason ja _HillShade_-tasolla parannellun korkeusmallin perusteella, että rinteet olivat tarpeeksi jyrkkiä eivätkä vaihdelleet vähän väliä suuntaa ylös alas.
+
+Palveluhahmotelma-tasolle rajasin alueet rinteiden lähellä, jotka olisivat potentiaalisesti tarpeeksi tasaisia rakennuksia, parkkipaikkoja tai muuta infrastruktuuria varten.
+
+Lopuksi laitoin rinne- ja palveluhahmotelmat mukailemaan korkeusmallia _Interpolate Shape_-työkalun avulla.
 
 <img src="{{ site.base_url }}{% link /assets/imgs/GIS2/wk7/Hahmotelmat.PNG %}" border="1">
 
